@@ -1,0 +1,55 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -p xc6vlx240tff1156-1 -dd _ngo -uc todo.ucf todo.edf
+
+Executing edif2ngd -quiet "todo.edf" "_ngo\todo.ngo"
+Release 14.7 - edif2ngd P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading NGO file
+"C:/A_REPOSITORIO/investigacion/Reconfiguracion_Dinamica/tools/planAhead/todo_es
+tatico/todo_estatico.runs/impl_1/_ngo/todo.ngo" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "todo.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:NgdBuild:1012 - The constraint <NET "cs_ila_0/TRIG0[4]" KEEP = "TRUE";>
+   [todo.ucf(43)] is overridden on the design object start_IBUF by the
+   constraint <NET "start_IBUF" KEEP = "TRUE";> [todo.ucf(58)].
+WARNING:NgdBuild:1012 - The constraint <NET "cs_ila_0/TRIG0[3]" KEEP = "TRUE";>
+   [todo.ucf(44)] is overridden on the design object rst_IBUF by the constraint
+   <NET "rst_IBUF" KEEP = "TRUE";> [todo.ucf(57)].
+WARNING:NgdBuild:1012 - The constraint <NET "cs_ila_0/TRIG0[2]" KEEP = "TRUE";>
+   [todo.ucf(45)] is overridden on the design object GPIO_LED_W_OBUF by the
+   constraint <NET "GPIO_LED_W_OBUF" KEEP = "TRUE";> [todo.ucf(56)].
+WARNING:NgdBuild:1012 - The constraint <NET "cs_ila_0/TRIG0[1]" KEEP = "TRUE";>
+   [todo.ucf(46)] is overridden on the design object GPIO_LED_N_OBUF by the
+   constraint <NET "GPIO_LED_N_OBUF" KEEP = "TRUE";> [todo.ucf(55)].
+WARNING:NgdBuild:1012 - The constraint <NET "cs_ila_0/TRIG0[0]" KEEP = "TRUE";>
+   [todo.ucf(47)] is overridden on the design object GPIO_LED_E_OBUF by the
+   constraint <NET "GPIO_LED_E_OBUF" KEEP = "TRUE";> [todo.ucf(54)].
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   5
+
+Total memory usage is 246496 kilobytes
+
+Writing NGD file "todo.ngd" ...
+Total REAL time to NGDBUILD completion:  8 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "todo.bld"...

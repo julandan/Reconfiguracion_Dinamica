@@ -1,0 +1,1512 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -o
+config_1.twr -v 30 -l 30 config_1_routed.ncd config_1.pcf
+
+Design file:              config_1_routed.ncd
+Physical constraint file: config_1.pcf
+Device,package,speed:     xc6vlx240t,ff1156,C,-1 (PRODUCTION 1.17 2013-10-13, STEPPING level 0)
+Report level:             verbose report, limited to 30 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 5 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 2547 paths analyzed, 221 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.105ns.
+--------------------------------------------------------------------------------
+Slack:                  0.895ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_FSM_estatico/current_state_FSM_FFd2 (FF)
+  Destination:          i_black_box/activa_dinamico_out (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      4.054ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.016ns (1.626 - 1.642)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_FSM_estatico/current_state_FSM_FFd2 to i_black_box/activa_dinamico_out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+                                                       (Partition Pin)
+    -------------------------------------------------  -------------------
+    SLICE_X86Y70.BQ      Tcko                  0.337   i_FSM_estatico/current_state_FSM_FFd2
+                                                       i_FSM_estatico/current_state_FSM_FFd2
+    SLICE_X89Y45.A4      net (fanout=2)        1.455   i_FSM_estatico/current_state_FSM_FFd2
+    SLICE_X89Y45.A       Tilo                  0.068   activa_dinamico
+                                                       i_FSM_estatico/activa_dinamico1
+    SLICE_X103Y11.A6     net (fanout=1)        1.983   activa_dinamico
+    SLICE_X103Y11.A      Tilo                  0.068   i_black_box/activa_led_w
+                                                       i_black_box/activa_dinamico_PROXY
+                                                       (i_black_box.activa_dinamico)
+    SLICE_X102Y11.AX     net (fanout=1)        0.128   i_black_box/activa_dinamico
+    SLICE_X102Y11.CLK    Tdick                 0.015   i_black_box/activa_dinamico_out
+                                                       i_black_box/activa_dinamico_out
+    -------------------------------------------------  ---------------------------
+    Total                                      4.054ns (0.488ns logic, 3.566ns route)
+                                                       (12.0% logic, 88.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.180ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_FSM_estatico/current_state_FSM_FFd1 (FF)
+  Destination:          i_black_box/activa_dinamico_out (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.777ns (Levels of Logic = 2)
+  Clock Path Skew:      -0.008ns (1.626 - 1.634)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_FSM_estatico/current_state_FSM_FFd1 to i_black_box/activa_dinamico_out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+                                                       (Partition Pin)
+    -------------------------------------------------  -------------------
+    SLICE_X87Y64.BQ      Tcko                  0.337   i_FSM_estatico/current_state_FSM_FFd1
+                                                       i_FSM_estatico/current_state_FSM_FFd1
+    SLICE_X89Y45.A5      net (fanout=11)       1.178   i_FSM_estatico/current_state_FSM_FFd1
+    SLICE_X89Y45.A       Tilo                  0.068   activa_dinamico
+                                                       i_FSM_estatico/activa_dinamico1
+    SLICE_X103Y11.A6     net (fanout=1)        1.983   activa_dinamico
+    SLICE_X103Y11.A      Tilo                  0.068   i_black_box/activa_led_w
+                                                       i_black_box/activa_dinamico_PROXY
+                                                       (i_black_box.activa_dinamico)
+    SLICE_X102Y11.AX     net (fanout=1)        0.128   i_black_box/activa_dinamico
+    SLICE_X102Y11.CLK    Tdick                 0.015   i_black_box/activa_dinamico_out
+                                                       i_black_box/activa_dinamico_out
+    -------------------------------------------------  ---------------------------
+    Total                                      3.777ns (0.488ns logic, 3.289ns route)
+                                                       (12.9% logic, 87.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.232ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.670ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.063ns (1.006 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X102Y9.BQ      Tcko                  0.381   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    SLICE_X100Y9.C3      net (fanout=2)        0.597   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[12]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y10.SR     net (fanout=4)        0.481   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y10.CLK    Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[20]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19
+    -------------------------------------------------  ---------------------------
+    Total                                      3.670ns (1.168ns logic, 2.502ns route)
+                                                       (31.8% logic, 68.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.232ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.670ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.063ns (1.006 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X102Y9.BQ      Tcko                  0.381   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    SLICE_X100Y9.C3      net (fanout=2)        0.597   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[12]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y10.SR     net (fanout=4)        0.481   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y10.CLK    Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[20]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20
+    -------------------------------------------------  ---------------------------
+    Total                                      3.670ns (1.168ns logic, 2.502ns route)
+                                                       (31.8% logic, 68.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.263ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.639ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.063ns (1.006 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.BQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14
+    SLICE_X100Y9.C1      net (fanout=2)        0.610   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[14]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y10.SR     net (fanout=4)        0.481   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y10.CLK    Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[20]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20
+    -------------------------------------------------  ---------------------------
+    Total                                      3.639ns (1.124ns logic, 2.515ns route)
+                                                       (30.9% logic, 69.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.263ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.639ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.063ns (1.006 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.BQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14
+    SLICE_X100Y9.C1      net (fanout=2)        0.610   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[14]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y10.SR     net (fanout=4)        0.481   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y10.CLK    Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[20]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19
+    -------------------------------------------------  ---------------------------
+    Total                                      3.639ns (1.124ns logic, 2.515ns route)
+                                                       (30.9% logic, 69.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.267ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.635ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.063ns (1.006 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.AQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13
+    SLICE_X100Y9.C2      net (fanout=2)        0.606   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[13]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y10.SR     net (fanout=4)        0.481   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y10.CLK    Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[20]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19
+    -------------------------------------------------  ---------------------------
+    Total                                      3.635ns (1.124ns logic, 2.511ns route)
+                                                       (30.9% logic, 69.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.267ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.635ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.063ns (1.006 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.AQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13
+    SLICE_X100Y9.C2      net (fanout=2)        0.606   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[13]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y10.SR     net (fanout=4)        0.481   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y10.CLK    Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[20]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20
+    -------------------------------------------------  ---------------------------
+    Total                                      3.635ns (1.124ns logic, 2.511ns route)
+                                                       (30.9% logic, 69.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.345ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_6 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.559ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.061ns (1.008 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X102Y9.BQ      Tcko                  0.381   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    SLICE_X100Y9.C3      net (fanout=2)        0.597   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[12]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y8.SR      net (fanout=4)        0.370   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y8.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[9]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_6
+    -------------------------------------------------  ---------------------------
+    Total                                      3.559ns (1.168ns logic, 2.391ns route)
+                                                       (32.8% logic, 67.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.345ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_9 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.559ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.061ns (1.008 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X102Y9.BQ      Tcko                  0.381   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    SLICE_X100Y9.C3      net (fanout=2)        0.597   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[12]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y8.SR      net (fanout=4)        0.370   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y8.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[9]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_9
+    -------------------------------------------------  ---------------------------
+    Total                                      3.559ns (1.168ns logic, 2.391ns route)
+                                                       (32.8% logic, 67.2% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.351ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_10 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.552ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.062ns (1.007 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X102Y9.BQ      Tcko                  0.381   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    SLICE_X100Y9.C3      net (fanout=2)        0.597   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[12]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y9.SR      net (fanout=4)        0.363   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_10
+    -------------------------------------------------  ---------------------------
+    Total                                      3.552ns (1.168ns logic, 2.384ns route)
+                                                       (32.9% logic, 67.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.376ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_9 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.528ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.061ns (1.008 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.BQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14
+    SLICE_X100Y9.C1      net (fanout=2)        0.610   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[14]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y8.SR      net (fanout=4)        0.370   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y8.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[9]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_9
+    -------------------------------------------------  ---------------------------
+    Total                                      3.528ns (1.124ns logic, 2.404ns route)
+                                                       (31.9% logic, 68.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.376ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_6 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.528ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.061ns (1.008 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.BQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14
+    SLICE_X100Y9.C1      net (fanout=2)        0.610   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[14]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y8.SR      net (fanout=4)        0.370   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y8.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[9]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_6
+    -------------------------------------------------  ---------------------------
+    Total                                      3.528ns (1.124ns logic, 2.404ns route)
+                                                       (31.9% logic, 68.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.380ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_9 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.524ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.061ns (1.008 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.AQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13
+    SLICE_X100Y9.C2      net (fanout=2)        0.606   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[13]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y8.SR      net (fanout=4)        0.370   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y8.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[9]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_9
+    -------------------------------------------------  ---------------------------
+    Total                                      3.524ns (1.124ns logic, 2.400ns route)
+                                                       (31.9% logic, 68.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.380ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_6 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.524ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.061ns (1.008 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.AQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13
+    SLICE_X100Y9.C2      net (fanout=2)        0.606   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[13]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y8.SR      net (fanout=4)        0.370   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y8.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[9]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_6
+    -------------------------------------------------  ---------------------------
+    Total                                      3.524ns (1.124ns logic, 2.400ns route)
+                                                       (31.9% logic, 68.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.382ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_10 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.521ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.062ns (1.007 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.BQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14
+    SLICE_X100Y9.C1      net (fanout=2)        0.610   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[14]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y9.SR      net (fanout=4)        0.363   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_10
+    -------------------------------------------------  ---------------------------
+    Total                                      3.521ns (1.124ns logic, 2.397ns route)
+                                                       (31.9% logic, 68.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.386ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_10 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.517ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.062ns (1.007 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.AQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13
+    SLICE_X100Y9.C2      net (fanout=2)        0.606   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[13]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y9.SR      net (fanout=4)        0.363   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_10
+    -------------------------------------------------  ---------------------------
+    Total                                      3.517ns (1.124ns logic, 2.393ns route)
+                                                       (32.0% logic, 68.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.425ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.477ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.063ns (1.006 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X102Y9.CQ      Tcko                  0.381   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16
+    SLICE_X100Y9.C4      net (fanout=2)        0.404   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[16]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y10.SR     net (fanout=4)        0.481   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y10.CLK    Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[20]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_20
+    -------------------------------------------------  ---------------------------
+    Total                                      3.477ns (1.168ns logic, 2.309ns route)
+                                                       (33.6% logic, 66.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.425ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.477ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.063ns (1.006 - 1.069)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X102Y9.CQ      Tcko                  0.381   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16
+    SLICE_X100Y9.C4      net (fanout=2)        0.404   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[16]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X100Y10.SR     net (fanout=4)        0.481   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X100Y10.CLK    Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[20]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_19
+    -------------------------------------------------  ---------------------------
+    Total                                      3.477ns (1.168ns logic, 2.309ns route)
+                                                       (33.6% logic, 66.4% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.430ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.535ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X102Y9.BQ      Tcko                  0.381   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    SLICE_X100Y9.C3      net (fanout=2)        0.597   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[12]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X102Y9.SR      net (fanout=4)        0.346   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X102Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    -------------------------------------------------  ---------------------------
+    Total                                      3.535ns (1.168ns logic, 2.367ns route)
+                                                       (33.0% logic, 67.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.430ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_17 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.535ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X102Y9.BQ      Tcko                  0.381   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    SLICE_X100Y9.C3      net (fanout=2)        0.597   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[12]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X102Y9.SR      net (fanout=4)        0.346   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X102Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_17
+    -------------------------------------------------  ---------------------------
+    Total                                      3.535ns (1.168ns logic, 2.367ns route)
+                                                       (33.0% logic, 67.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.430ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.535ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X102Y9.BQ      Tcko                  0.381   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    SLICE_X100Y9.C3      net (fanout=2)        0.597   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[12]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X102Y9.SR      net (fanout=4)        0.346   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X102Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16
+    -------------------------------------------------  ---------------------------
+    Total                                      3.535ns (1.168ns logic, 2.367ns route)
+                                                       (33.0% logic, 67.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.430ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_11 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.535ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X102Y9.BQ      Tcko                  0.381   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    SLICE_X100Y9.C3      net (fanout=2)        0.597   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[12]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X102Y9.SR      net (fanout=4)        0.346   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X102Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_11
+    -------------------------------------------------  ---------------------------
+    Total                                      3.535ns (1.168ns logic, 2.367ns route)
+                                                       (33.0% logic, 67.0% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.440ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_17 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.504ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.021ns (0.091 - 0.112)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.BQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14
+    SLICE_X100Y9.C1      net (fanout=2)        0.610   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[14]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X102Y9.SR      net (fanout=4)        0.346   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X102Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_17
+    -------------------------------------------------  ---------------------------
+    Total                                      3.504ns (1.124ns logic, 2.380ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.440ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.504ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.021ns (0.091 - 0.112)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.BQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14
+    SLICE_X100Y9.C1      net (fanout=2)        0.610   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[14]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X102Y9.SR      net (fanout=4)        0.346   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X102Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16
+    -------------------------------------------------  ---------------------------
+    Total                                      3.504ns (1.124ns logic, 2.380ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.440ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.504ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.021ns (0.091 - 0.112)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.BQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14
+    SLICE_X100Y9.C1      net (fanout=2)        0.610   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[14]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X102Y9.SR      net (fanout=4)        0.346   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X102Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    -------------------------------------------------  ---------------------------
+    Total                                      3.504ns (1.124ns logic, 2.380ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.440ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_11 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.504ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.021ns (0.091 - 0.112)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.BQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_14
+    SLICE_X100Y9.C1      net (fanout=2)        0.610   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[14]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X102Y9.SR      net (fanout=4)        0.346   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X102Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_11
+    -------------------------------------------------  ---------------------------
+    Total                                      3.504ns (1.124ns logic, 2.380ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.444ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.500ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.021ns (0.091 - 0.112)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.AQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13
+    SLICE_X100Y9.C2      net (fanout=2)        0.606   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[13]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X102Y9.SR      net (fanout=4)        0.346   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X102Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_12
+    -------------------------------------------------  ---------------------------
+    Total                                      3.500ns (1.124ns logic, 2.376ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.444ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_17 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.500ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.021ns (0.091 - 0.112)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.AQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13
+    SLICE_X100Y9.C2      net (fanout=2)        0.606   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[13]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X102Y9.SR      net (fanout=4)        0.346   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X102Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_17
+    -------------------------------------------------  ---------------------------
+    Total                                      3.500ns (1.124ns logic, 2.376ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+Slack:                  1.444ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 (FF)
+  Destination:          i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.500ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.021ns (0.091 - 0.112)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13 to i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X103Y9.AQ      Tcko                  0.337   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[15]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_13
+    SLICE_X100Y9.C2      net (fanout=2)        0.606   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[13]
+    SLICE_X100Y9.C       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>1
+    SLICE_X100Y9.B1      net (fanout=10)       0.863   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout[23]
+    SLICE_X100Y9.B       Tilo                  0.068   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[10]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout<23>5
+    SLICE_X103Y7.B5      net (fanout=16)       0.561   i_black_box/i_FSM_dinamico_drc_fast/csm_wait_combo_proc.csm_temp_timeout
+    SLICE_X103Y7.BMUX    Tilo                  0.196   i_black_box/i_FSM_dinamico_drc_fast/current_state_FSM_FFd2
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_01
+    SLICE_X102Y9.SR      net (fanout=4)        0.346   i_black_box/i_FSM_dinamico_drc_fast/csm_to_s1_0
+    SLICE_X102Y9.CLK     Tsrck                 0.455   i_black_box/i_FSM_dinamico_drc_fast/csm_timer[17]
+                                                       i_black_box/i_FSM_dinamico_drc_fast/csm_timer_16
+    -------------------------------------------------  ---------------------------
+    Total                                      3.500ns (1.124ns logic, 2.376ns route)
+                                                       (32.1% logic, 67.9% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 5 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 3.571ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 1.429ns (699.790MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGCTRL_X0Y0.I0
+  Clock network: clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[10]/SR
+  Logical resource: i_FSM_estatico/csm_timer_17/SR
+  Location pin: SLICE_X84Y74.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[10]/SR
+  Logical resource: i_FSM_estatico/csm_timer_13/SR
+  Location pin: SLICE_X84Y74.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[18]/SR
+  Logical resource: i_FSM_estatico/csm_timer_19/SR
+  Location pin: SLICE_X84Y75.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[23]/SR
+  Logical resource: i_FSM_estatico/csm_timer_25/SR
+  Location pin: SLICE_X84Y76.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[5]/SR
+  Logical resource: i_FSM_estatico/csm_timer_1/SR
+  Location pin: SLICE_X85Y69.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[5]/SR
+  Logical resource: i_FSM_estatico/csm_timer_21/SR
+  Location pin: SLICE_X85Y69.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[5]/SR
+  Logical resource: i_FSM_estatico/csm_timer_4/SR
+  Location pin: SLICE_X85Y69.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[5]/SR
+  Logical resource: i_FSM_estatico/csm_timer_8/SR
+  Location pin: SLICE_X85Y69.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[9]/SR
+  Logical resource: i_FSM_estatico/csm_timer_6/SR
+  Location pin: SLICE_X85Y70.SR
+  Clock network: i_FSM_estatico/csm_to_s1_0
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[9]/SR
+  Logical resource: i_FSM_estatico/csm_timer_24/SR
+  Location pin: SLICE_X85Y70.SR
+  Clock network: i_FSM_estatico/csm_to_s1_0
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[12]/SR
+  Logical resource: i_FSM_estatico/csm_timer_11/SR
+  Location pin: SLICE_X85Y71.SR
+  Clock network: i_FSM_estatico/csm_to_s1_0
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[22]/SR
+  Logical resource: i_FSM_estatico/csm_timer_20/SR
+  Location pin: SLICE_X85Y73.SR
+  Clock network: i_FSM_estatico/csm_to_s1_0
+--------------------------------------------------------------------------------
+Slack: 4.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: i_FSM_estatico/csm_timer[16]/SR
+  Logical resource: i_FSM_estatico/csm_timer_14/SR
+  Location pin: SLICE_X86Y71.SR
+  Clock network: i_FSM_estatico/csm_to_s1_0
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 5.000ns
+  Low pulse: 2.500ns
+  Low pulse limit: 0.364ns (Tcl)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_0/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.364ns (Tch)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_0/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.728ns (1373.626MHz) (Tcp)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_0/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 5.000ns
+  Low pulse: 2.500ns
+  Low pulse limit: 0.364ns (Tcl)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_1/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.364ns (Tch)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_1/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.728ns (1373.626MHz) (Tcp)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_1/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 5.000ns
+  Low pulse: 2.500ns
+  Low pulse limit: 0.364ns (Tcl)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_2/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.364ns (Tch)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_2/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.728ns (1373.626MHz) (Tcp)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_2/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 5.000ns
+  Low pulse: 2.500ns
+  Low pulse limit: 0.364ns (Tcl)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_3/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.364ns (Tch)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_3/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.728ns (1373.626MHz) (Tcp)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[3]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_3/CK
+  Location pin: SLICE_X100Y6.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 5.000ns
+  Low pulse: 2.500ns
+  Low pulse limit: 0.364ns (Tcl)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[5]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_4/CK
+  Location pin: SLICE_X100Y7.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 5.000ns
+  High pulse: 2.500ns
+  High pulse limit: 0.364ns (Tch)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[5]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_4/CK
+  Location pin: SLICE_X100Y7.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - min period limit)
+  Period: 5.000ns
+  Min period limit: 0.728ns (1373.626MHz) (Tcp)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[5]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_4/CK
+  Location pin: SLICE_X100Y7.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 4.272ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 5.000ns
+  Low pulse: 2.500ns
+  Low pulse limit: 0.364ns (Tcl)
+  Physical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer[5]/CLK
+  Logical resource: i_black_box/i_FSM_dinamico_drc_fast/csm_timer_5/CK
+  Location pin: SLICE_X100Y7.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.105|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 2547 paths, 0 nets, and 334 connections
+
+Design statistics:
+   Minimum period:   4.105ns{1}   (Maximum frequency: 243.605MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Sep 07 17:45:42 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 668 MB
+
+
+

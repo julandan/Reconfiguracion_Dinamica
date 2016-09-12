@@ -1,0 +1,24 @@
+#PlanAhead Signal Export Version 1.0
+Project.unit.dimension=1
+Project.icon.name=u_icon
+Project.icon.boundaryScanChain=1
+Project.unit<0>.name=cs_ila_0
+Project.unit<0>.type=ilapro
+Project.unit<0>.clockEdge=Rising
+Project.unit<0>.dataDepth=1024
+Project.unit<0>.triggerSequencerLevels=1
+Project.unit<0>.enableStorageQualification=true
+Project.unit<0>.clockChannel=clk_BUFGP
+Project.unit<0>.dataPortWidth=0
+Project.unit<0>.dataEqualsTrigger=true
+Project.unit<0>.triggerPortCount=1
+Project.unit<0>.triggerMatchCount<0>=1
+Project.unit<0>.triggerMatchType<0><0>=1
+Project.unit<0>.triggerMatchCountWidth<0><0>=0
+Project.unit<0>.triggerPortWidth<0>=5
+Project.unit<0>.triggerPortIsData<0>=true
+Project.unit<0>.triggerChannel<0><0>=GPIO_LED_E_OBUF
+Project.unit<0>.triggerChannel<0><1>=GPIO_LED_N_OBUF
+Project.unit<0>.triggerChannel<0><2>=GPIO_LED_W_OBUF
+Project.unit<0>.triggerChannel<0><3>=rst_IBUF
+Project.unit<0>.triggerChannel<0><4>=start_IBUF

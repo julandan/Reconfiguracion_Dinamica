@@ -1,0 +1,30 @@
+#------------------------------------------------------------------------------
+# IO Pad Location Constraints for ML605 board
+#modificación del ejemplo xpr_bram_led
+
+#--------------------------------------------------------------------------------
+#  GPIO_LED
+
+NET "GPIO_LED_E" LOC = AE21;
+NET "GPIO_LED_N" LOC = AH27;
+NET "GPIO_LED_W" LOC = AD21;
+
+#------------------------------------------------------------------------------
+
+NET "clk" IOSTANDARD = LVCMOS25;
+NET "clk" LOC = U23;
+
+
+
+
+#pulso el centro
+NET "rst" IOSTANDARD = LVCMOS25;
+NET "rst" PULLDOWN;
+NET "rst" LOC = G26;
+
+#pulso el norte
+NET "start" IOSTANDARD = LVCMOS25;
+NET "start" PULLDOWN;
+NET "start" LOC = A19;
+
+

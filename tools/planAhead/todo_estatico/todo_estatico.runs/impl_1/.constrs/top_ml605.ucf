@@ -1,0 +1,36 @@
+NET "i_FSM_dinamico_drc_fast/current_state_FSM_FFd2-In" KEEP = "FALSE";
+NET "GPIO_LED_E_OBUF" KEEP = "TRUE";
+NET "GPIO_LED_N_OBUF" KEEP = "TRUE";
+NET "GPIO_LED_W_OBUF" KEEP = "TRUE";
+NET "rst_IBUF" KEEP = "TRUE";
+NET "start_IBUF" KEEP = "TRUE";
+#------------------------------------------------------------------------------
+# IO Pad Location Constraints for ML605 board
+#modificación del ejemplo xpr_bram_led
+
+#--------------------------------------------------------------------------------
+#  GPIO_LED
+
+NET "GPIO_LED_E" LOC = AE21;
+NET "GPIO_LED_N" LOC = AH27;
+NET "GPIO_LED_W" LOC = AD21;
+
+#------------------------------------------------------------------------------
+
+NET "clk" IOSTANDARD = LVCMOS25;
+NET "clk" LOC = U23;
+
+
+#TIMESPEC TS_clk_p = PERIOD "clk_p" 20 ns;
+#NET "clk" TNM_NET = "clk_p";
+
+#pulso el centro
+NET "rst" IOSTANDARD = LVCMOS25;
+NET "rst" PULLDOWN;
+NET "rst" LOC = G26;
+
+#pulso el norte
+NET "start" IOSTANDARD = LVCMOS25;
+NET "start" PULLDOWN;
+NET "start" LOC = A19;
+

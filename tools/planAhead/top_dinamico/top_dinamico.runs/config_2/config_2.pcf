@@ -1,0 +1,86 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Sep 07 18:24:02 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "GPIO_LED_E" LOCATE = SITE "AE21" LEVEL 1;
+COMP "GPIO_LED_N" LOCATE = SITE "AH27" LEVEL 1;
+COMP "GPIO_LED_W" LOCATE = SITE "AD21" LEVEL 1;
+COMP "clk" LOCATE = SITE "U23" LEVEL 1;
+COMP "start" LOCATE = SITE "A19" LEVEL 1;
+COMP "rst" LOCATE = SITE "G26" LEVEL 1;
+COMPGRP pblock_i_black_box.SLICE = COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/Msub_GND_5_o_GND_5_o_sub_11_OUT<24:0>_cy[3]"
+        COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/Msub_GND_5_o_GND_5_o_sub_11_OUT<24:0>_cy[7]"
+        COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/Msub_GND_5_o_GND_5_o_sub_11_OUT<24:0>_cy[11]"
+        COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/Msub_GND_5_o_GND_5_o_sub_11_OUT<24:0>_cy[15]"
+        COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/Msub_GND_5_o_GND_5_o_sub_11_OUT<24:0>_cy[19]"
+        COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/Msub_GND_5_o_GND_5_o_sub_11_OUT<24:0>_cy[23]"
+        COMP "i_black_box/i_FSM_dinamico_iz_slow/current_state_FSM_FFd2" COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer[10]" COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer[9]" COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer[14]" COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer[17]" COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer[24]" COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer[21]" COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer[3]" COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_wait_combo_proc.csm_temp_timeout[24]"
+        COMP "i_black_box/i_FSM_dinamico_iz_slow/csm_timer[4]" COMP
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer[16]" COMP
+        "i_black_box/activa_led_e_aux" COMP "i_black_box/activa_led_e" COMP
+        "i_black_box/activa_dinamico_out" COMP "i_black_box/rst" COMP
+        "i_black_box/activa_led_e_PROXY";
+COMPGRP "pblock_i_black_box.SLICE" LOCATE = SITE "SLICE_X100Y1:SLICE_X105Y11"
+        LEVEL 4;
+TIMEGRP clk = BEL "i_FSM_estatico/csm_timer_17" BEL
+        "i_FSM_estatico/csm_timer_15" BEL "i_FSM_estatico/csm_timer_13" BEL
+        "i_FSM_estatico/csm_timer_10" BEL "i_FSM_estatico/csm_timer_19" BEL
+        "i_FSM_estatico/csm_timer_18" BEL "i_FSM_estatico/csm_timer_25" BEL
+        "i_FSM_estatico/csm_timer_23" BEL "i_FSM_estatico/csm_timer_1" BEL
+        "i_FSM_estatico/csm_timer_0" BEL "i_FSM_estatico/csm_timer_21" BEL
+        "i_FSM_estatico/csm_timer_2" BEL "i_FSM_estatico/csm_timer_4" BEL
+        "i_FSM_estatico/csm_timer_3" BEL "i_FSM_estatico/csm_timer_8" BEL
+        "i_FSM_estatico/csm_timer_5" BEL "i_FSM_estatico/csm_timer_6" BEL
+        "i_FSM_estatico/csm_timer_7" BEL "i_FSM_estatico/csm_timer_24" BEL
+        "i_FSM_estatico/csm_timer_9" BEL "i_FSM_estatico/csm_timer_11" BEL
+        "i_FSM_estatico/csm_timer_12" BEL "i_FSM_estatico/csm_timer_20" BEL
+        "i_FSM_estatico/csm_timer_22" BEL
+        "i_FSM_estatico/current_state_FSM_FFd2" BEL
+        "i_FSM_estatico/csm_timer_14" BEL "i_FSM_estatico/csm_timer_16" BEL
+        "i_FSM_estatico/current_state_FSM_FFd1" BEL "clk_BUFGP/BUFG" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/current_state_FSM_FFd1" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_5" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/current_state_FSM_FFd2" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_10" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_6" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_7" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_8" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_9" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_11" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_12" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_13" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_14" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_23" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_15" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_17" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_22" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_24" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_18" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_19" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_20" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_21" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_0" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_1" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_2" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_3" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_4" BEL
+        "i_black_box/i_FSM_dinamico_iz_slow/csm_timer_16" BEL
+        "i_black_box/activa_led_e" BEL "i_black_box/activa_dinamico_out";
+TS_clk = PERIOD TIMEGRP "clk" 5 ns HIGH 50%;
+SCHEMATIC END;
+
