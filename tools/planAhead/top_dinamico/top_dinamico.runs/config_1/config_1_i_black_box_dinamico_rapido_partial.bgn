@@ -5,9 +5,9 @@ C:\Xilinx\14.7\ISE_DS\ISE\.
    "top" is an NCD, version 3.2, device xc6vlx240t, package ff1156, speed -1
 Opened constraints file config_1.pcf.
 
-Wed Sep 07 18:46:10 2016
+Tue Sep 13 07:50:29 2016
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -w -intstyle pa -g Partial:i_black_box -g ActiveReconfig:Yes config_1_routed.ncd config_1_i_black_box_dinamico_rapido_partial.bgn config_1.pcf 
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -b -w -intstyle pa -g Partial:i_black_box -g ActiveReconfig:Yes config_1_routed.ncd config_1_i_black_box_dinamico_rapido_partial.bgn config_1.pcf 
 
 Summary of Bitgen Options:
 +----------------------+----------------------+
@@ -151,4 +151,5 @@ Creating bit stream for Partition "/top/i_black_box" (Reconfigurable Module
 "dinamico_rapido")
 Creating bit map...
 Saving bit stream in "config_1_i_black_box_dinamico_rapido_partial.bit".
+Saving bit stream in "config_1_i_black_box_dinamico_rapido_partial.rbt".
 Bitstream generation is complete.

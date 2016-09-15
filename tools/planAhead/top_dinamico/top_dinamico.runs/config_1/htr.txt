@@ -6,4 +6,4 @@ REM          to be invoked for PlanAhead to track run status.
 REM Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
 REM
 
-bitgen "config_1_routed.ncd" "config_1.bit" "config_1.pcf" -w -intstyle pa
+bitgen "config_1_routed.ncd" "config_1.bit" "config_1.pcf" -b -w -intstyle pa

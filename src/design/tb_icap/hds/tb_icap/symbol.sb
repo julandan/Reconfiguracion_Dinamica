@@ -13,7 +13,7 @@ unitName "std_logic_arith"
 )
 (DmPackageRef
 library "UNISIM"
-unitName "Vcomponents"
+unitName "vcomponents"
 itemName "ALL"
 )
 ]
@@ -68,11 +68,14 @@ tm "EolColHdrMgr"
 )
 *14 (LogPort
 port (LogicalPort
+lang 11
 m 1
 decl (Decl
 n "O"
 t "std_logic_vector"
 b "(31 downto 0)"
+preAdd 0
+posAdd 0
 o 2
 suid 6,0
 )
@@ -81,12 +84,16 @@ uid 119,0
 )
 *15 (LogPort
 port (LogicalPort
+lang 11
 m 1
 decl (Decl
 n "BUSY"
-t "std_logic"
+t "std_ulogic"
+preAdd 0
+posAdd 0
 o 1
 suid 11,0
+i "'1'"
 )
 )
 uid 662,0
@@ -117,7 +124,7 @@ font "Tahoma,10,0"
 )
 emptyMRCItem *17 (MRCItem
 litem &1
-pos 6
+pos 2
 dimension 20
 )
 uid 68,0
@@ -422,19 +429,19 @@ value "T:\\Reconfiguracion_Dinamica\\src\\design\\tb_icap\\hds\\tb_icap"
 )
 (vvPair
 variable "date"
-value "10/09/2016"
+value "13/09/2016"
 )
 (vvPair
 variable "day"
-value "sá."
+value "ma."
 )
 (vvPair
 variable "day_long"
-value "sábado"
+value "martes"
 )
 (vvPair
 variable "dd"
-value "10"
+value "13"
 )
 (vvPair
 variable "entity_name"
@@ -462,7 +469,7 @@ value "Juan Lanchares"
 )
 (vvPair
 variable "graphical_source_date"
-value "10/09/2016"
+value "13/09/2016"
 )
 (vvPair
 variable "graphical_source_group"
@@ -474,7 +481,7 @@ value "LANCHARES"
 )
 (vvPair
 variable "graphical_source_time"
-value "08:21:28"
+value "09:41:00"
 )
 (vvPair
 variable "group"
@@ -498,11 +505,11 @@ value "$HOME_PROJECT/src/design/tb_icap/designcheck"
 )
 (vvPair
 variable "library_downstream_ISEPARInvoke"
-value "$HOME_PROJECT\\src\\design\\tb_icap\\ise"
+value "$HOME_PROJECT/src/design/tb_icap/ise"
 )
 (vvPair
 variable "library_downstream_ImpactInvoke"
-value "$HOME_PROJECT\\src\\design\\tb_icap\\ise"
+value "$HOME_PROJECT/src/design/tb_icap/ise"
 )
 (vvPair
 variable "library_downstream_QuestaSimCompiler"
@@ -510,7 +517,7 @@ value "$HOME_PROJECT/work/compilation/tb_icap"
 )
 (vvPair
 variable "library_downstream_XSTDataPrep"
-value "$HOME_PROJECT\\src\\design\\tb_icap\\ise"
+value "$HOME_PROJECT/src/design/tb_icap/ise"
 )
 (vvPair
 variable "mm"
@@ -590,7 +597,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "08:21:28"
+value "09:41:00"
 )
 (vvPair
 variable "unit"
@@ -661,11 +668,14 @@ xt "44000,2800,68000,3600"
 st "O    : OUT    std_logic_vector (31 downto 0)"
 )
 thePort (LogicalPort
+lang 11
 m 1
 decl (Decl
 n "O"
 t "std_logic_vector"
 b "(31 downto 0)"
+preAdd 0
+posAdd 0
 o 2
 suid 6,0
 )
@@ -698,22 +708,37 @@ ju 2
 blo "32000,9300"
 tm "CptPortNameMgr"
 )
+t (Text
+uid 944,0
+va (VaSet
+font "arial,8,0"
+)
+xt "30800,9500,32000,10500"
+st "'1'"
+ju 2
+blo "32000,10300"
+tm "InitValueDelayMgr"
+)
 )
 dt (MLText
 uid 667,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "44000,2000,58500,2800"
-st "BUSY : OUT    std_logic  ;"
+xt "44000,2000,62500,2800"
+st "BUSY : OUT    std_ulogic  := '1' ;"
 )
 thePort (LogicalPort
+lang 11
 m 1
 decl (Decl
 n "BUSY"
-t "std_logic"
+t "std_ulogic"
+preAdd 0
+posAdd 0
 o 1
 suid 11,0
+i "'1'"
 )
 )
 )
@@ -1133,18 +1158,18 @@ uid 50,0
 va (VaSet
 font "arial,8,0"
 )
-xt "0,1000,12200,6000"
+xt "0,1000,12000,6000"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 LIBRARY UNISIM;
-USE UNISIM.Vcomponents.ALL;"
+USE UNISIM.vcomponents.ALL;"
 tm "PackageList"
 )
 ]
 )
-windowSize "84,52,1102,742"
-viewArea "-1023,-1023,74738,50379"
+windowSize "84,52,1104,742"
+viewArea "-1000,-1000,75032,50456"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
@@ -1418,7 +1443,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 874,0
+lastUid 944,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"

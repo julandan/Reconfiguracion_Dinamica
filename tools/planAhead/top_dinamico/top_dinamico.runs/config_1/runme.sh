@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep bitgen "config_1_routed.ncd" "config_1.bit" "config_1.pcf" -w -intstyle pa
+EAStep bitgen "config_1_routed.ncd" "config_1.bit" "config_1.pcf" -b -w -intstyle pa

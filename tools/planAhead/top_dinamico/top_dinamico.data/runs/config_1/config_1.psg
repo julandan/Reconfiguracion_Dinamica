@@ -15,6 +15,7 @@
 	<Step Id="xdl">
 	</Step>
 	<Step Id="bitgen">
+		<Option Id="RawbitsBool">1</Option>
 	</Step>
 </Strategy>
 
