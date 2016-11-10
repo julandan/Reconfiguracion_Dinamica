@@ -9,7 +9,7 @@ unitName "std_logic_1164"
 )
 (DmPackageRef
 library "ieee"
-unitName "std_logic_arith"
+unitName "numeric_std"
 )
 ]
 machine (Machine
@@ -74,7 +74,7 @@ value "T:\\Reconfiguracion_Dinamica\\src\\design\\estatico\\hds\\FSM_estatico"
 )
 (vvPair
 variable "date"
-value "05/09/2016"
+value "10/10/2016"
 )
 (vvPair
 variable "day"
@@ -86,7 +86,7 @@ value "lunes"
 )
 (vvPair
 variable "dd"
-value "05"
+value "10"
 )
 (vvPair
 variable "entity_name"
@@ -114,7 +114,7 @@ value "Juan Lanchares"
 )
 (vvPair
 variable "graphical_source_date"
-value "05/09/2016"
+value "10/10/2016"
 )
 (vvPair
 variable "graphical_source_group"
@@ -126,7 +126,7 @@ value "LANCHARES"
 )
 (vvPair
 variable "graphical_source_time"
-value "15:43:11"
+value "17:56:18"
 )
 (vvPair
 variable "group"
@@ -142,7 +142,7 @@ value "VHDL"
 )
 (vvPair
 variable "library"
-value "estatico"
+value "FSM_estatico"
 )
 (vvPair
 variable "library_downstream_HdsLintPlugin"
@@ -150,11 +150,11 @@ value "$HOME_PROJECT/src/design/estatico/designcheck"
 )
 (vvPair
 variable "library_downstream_ISEPARInvoke"
-value "$HOME_PROJECT\\src\\design\\estatico\\ise"
+value "$HOME_PROJECT/src/design/estatico/ise"
 )
 (vvPair
 variable "library_downstream_ImpactInvoke"
-value "$HOME_PROJECT\\src\\design\\estatico\\ise"
+value "$HOME_PROJECT/src/design/estatico/ise"
 )
 (vvPair
 variable "library_downstream_QuestaSimCompiler"
@@ -162,11 +162,11 @@ value "$HOME_PROJECT/work/compilation/estatico"
 )
 (vvPair
 variable "library_downstream_XSTDataPrep"
-value "$HOME_PROJECT\\src\\design\\estatico\\ise"
+value "$HOME_PROJECT/src/design/estatico/ise"
 )
 (vvPair
 variable "mm"
-value "09"
+value "10"
 )
 (vvPair
 variable "module_name"
@@ -174,11 +174,11 @@ value "FSM_estatico"
 )
 (vvPair
 variable "month"
-value "sep."
+value "oct."
 )
 (vvPair
 variable "month_long"
-value "septiembre"
+value "octubre"
 )
 (vvPair
 variable "p"
@@ -242,7 +242,7 @@ value "fsm"
 )
 (vvPair
 variable "time"
-value "15:43:11"
+value "17:56:18"
 )
 (vvPair
 variable "unit"
@@ -666,7 +666,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "36200,46000,49000,47000"
+xt "36200,46000,48800,47000"
 st "
 by %user on %dd %month %year
 "
@@ -944,7 +944,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "36200,45000,46300,46000"
+xt "36200,45000,48400,46000"
 st "
 %library/%unit/%view
 "
@@ -1002,9 +1002,9 @@ va (VaSet
 fg "0,0,32768"
 font "arial,10,1"
 )
-xt "52330,15110,60730,16310"
+xt "50830,15110,59230,16310"
 st "wait 45000000"
-blo "52330,16110"
+blo "50830,16110"
 tm "SmWaitText"
 )
 )
@@ -1032,7 +1032,7 @@ lineColor "39936,56832,65280"
 lineWidth -1
 fillStyle 1
 )
-xt "51402,10602,60102,12802"
+xt "52202,11102,59302,12302"
 )
 autoResize 1
 tline (Line
@@ -1043,10 +1043,10 @@ isHidden 1
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "51502,10502,60002,10502"
+xt "52302,11002,59202,11002"
 pts [
-"51502,10502"
-"60002,10502"
+"52302,11002"
+"59202,11002"
 ]
 )
 bline (Line
@@ -1057,10 +1057,10 @@ isHidden 1
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "51502,10602,60002,10602"
+xt "52302,10352,59202,10352"
 pts [
-"51502,10602"
-"60002,10602"
+"52302,10352"
+"59202,10352"
 ]
 )
 ttri (Triangle
@@ -1074,7 +1074,7 @@ bg "0,0,0"
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "51052,10127,51402,10477"
+xt "51852,10627,52202,10977"
 )
 btri (Triangle
 uid 244,0
@@ -1087,14 +1087,14 @@ bg "0,0,0"
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "51052,8327,51402,8677"
+xt "51852,8327,52202,8677"
 )
 entryActions (MLText
 uid 245,0
 va (VaSet
 font "arial,8,0"
 )
-xt "51502,10302,51502,10302"
+xt "52302,10802,52302,10802"
 tm "Actions"
 )
 inActions (MLText
@@ -1102,9 +1102,8 @@ uid 246,0
 va (VaSet
 font "arial,8,0"
 )
-xt "51502,10702,60002,12702"
-st "activa_led_n<='0';
-activa_dinamico<='1';"
+xt "52302,11202,59202,12202"
+st "activa_led_n<='0';"
 tm "Actions"
 )
 exitActions (MLText
@@ -1164,9 +1163,9 @@ va (VaSet
 fg "0,0,32768"
 font "arial,10,1"
 )
-xt "44230,32030,52630,33230"
+xt "42730,32030,51130,33230"
 st "wait 45000000"
-blo "44230,33030"
+blo "42730,33030"
 tm "SmWaitText"
 )
 )
@@ -1194,7 +1193,7 @@ lineColor "39936,56832,65280"
 lineWidth -1
 fillStyle 1
 )
-xt "42938,36895,51638,39095"
+xt "43738,37395,50838,38595"
 )
 autoResize 1
 tline (Line
@@ -1205,10 +1204,10 @@ isHidden 1
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "43038,36795,51538,36795"
+xt "43838,37295,50738,37295"
 pts [
-"43038,36795"
-"51538,36795"
+"43838,37295"
+"50738,37295"
 ]
 )
 bline (Line
@@ -1219,10 +1218,10 @@ isHidden 1
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "43038,36895,51538,36895"
+xt "43838,36645,50738,36645"
 pts [
-"43038,36895"
-"51538,36895"
+"43838,36645"
+"50738,36645"
 ]
 )
 ttri (Triangle
@@ -1236,7 +1235,7 @@ bg "0,0,0"
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "42588,36420,42938,36770"
+xt "43388,36920,43738,37270"
 )
 btri (Triangle
 uid 261,0
@@ -1249,14 +1248,14 @@ bg "0,0,0"
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "42588,34620,42938,34970"
+xt "43388,34620,43738,34970"
 )
 entryActions (MLText
 uid 262,0
 va (VaSet
 font "arial,8,0"
 )
-xt "43038,36595,43038,36595"
+xt "43838,37095,43838,37095"
 tm "Actions"
 )
 inActions (MLText
@@ -1264,9 +1263,8 @@ uid 263,0
 va (VaSet
 font "arial,8,0"
 )
-xt "43038,36995,51538,38995"
-st "activa_led_n<='1';
-activa_dinamico<='0';"
+xt "43838,37495,50738,38495"
+st "activa_led_n<='1';"
 tm "Actions"
 )
 exitActions (MLText
@@ -1358,7 +1356,7 @@ lineColor "39936,56832,65280"
 lineWidth -1
 fillStyle 1
 )
-xt "33093,9533,41793,11733"
+xt "34673,10213,41773,11413"
 )
 autoResize 1
 tline (Line
@@ -1369,10 +1367,10 @@ isHidden 1
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "33193,9433,41693,9433"
+xt "34773,10113,41673,10113"
 pts [
-"33193,9433"
-"41693,9433"
+"34773,10113"
+"41673,10113"
 ]
 )
 bline (Line
@@ -1383,10 +1381,10 @@ isHidden 1
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "33193,9533,41693,9533"
+xt "34773,9463,41673,9463"
 pts [
-"33193,9533"
-"41693,9533"
+"34773,9463"
+"41673,9463"
 ]
 )
 ttri (Triangle
@@ -1400,7 +1398,7 @@ bg "0,0,0"
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "32743,9058,33093,9408"
+xt "34323,9738,34673,10088"
 )
 btri (Triangle
 uid 382,0
@@ -1413,14 +1411,14 @@ bg "0,0,0"
 lineColor "39936,56832,65280"
 lineWidth -1
 )
-xt "32743,7258,33093,7608"
+xt "34323,7438,34673,7788"
 )
 entryActions (MLText
 uid 383,0
 va (VaSet
 font "arial,8,0"
 )
-xt "33193,9233,33193,9233"
+xt "34773,9913,34773,9913"
 tm "Actions"
 )
 inActions (MLText
@@ -1428,9 +1426,8 @@ uid 384,0
 va (VaSet
 font "arial,8,0"
 )
-xt "33193,9633,41693,11633"
-st "activa_led_n<='1';
-activa_dinamico<='0';"
+xt "34773,10313,41673,11313"
+st "activa_led_n<='0';"
 tm "Actions"
 )
 exitActions (MLText
@@ -1438,7 +1435,7 @@ uid 385,0
 va (VaSet
 font "arial,8,0"
 )
-xt "33443,7433,33443,7433"
+xt "34223,7613,34223,7613"
 tm "Actions"
 )
 )
@@ -2032,7 +2029,7 @@ font "arial,8,0"
 xt "0,4000,10900,7000"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE ieee.std_logic_arith.all;"
+USE ieee.numeric_std.all;"
 tm "SmPackageListTextMgr"
 )
 ]
@@ -2113,8 +2110,8 @@ tm "SmCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,156,1555,996"
-viewArea "-12000,-5400,68947,38032"
+windowSize "1776,54,3457,1080"
+viewArea "-12000,-5400,75180,48480"
 cachedDiagramExtent "0,-1000,73000,47000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,-2000"
@@ -2404,10 +2401,9 @@ uid 32,0
 va (VaSet
 font "Courier New,8,0"
 )
-xt "35600,0,61600,2400"
-st "SIGNAL           MODE    DEFAULT  RESET  SCHEME 
-activa_led_n     OUT     '1'             COMB   
-activa_dinamico  OUT     '0'             COMB   
+xt "35600,0,60100,1600"
+st "SIGNAL        MODE    DEFAULT  RESET  SCHEME 
+activa_led_n  OUT     '1'             COMB   
 "
 tm "SmSignalsGenStatusTextMgr"
 )
@@ -2507,7 +2503,7 @@ stateOrder [
 name "csm"
 )
 ]
-lastUid 813,0
+lastUid 929,0
 commonDM (CommonDM
 ldm (LogicalDM
 emptyRow *55 (LEmptyRow
@@ -2598,7 +2594,7 @@ m 1
 decl (Decl
 n "activa_led_n"
 t "std_logic"
-o 3
+o 4
 )
 )
 uid 336,0
@@ -2608,24 +2604,10 @@ defVal "'1'"
 *77 (LeafLogPort
 port (LogicalPort
 lang 11
-m 1
-decl (Decl
-n "activa_dinamico"
-t "std_logic"
-o 4
-)
-)
-uid 338,0
-scheme 0
-defVal "'0'"
-)
-*78 (LeafLogPort
-port (LogicalPort
-lang 11
 decl (Decl
 n "start"
 t "std_logic"
-o 5
+o 3
 )
 )
 uid 744,0
@@ -2638,7 +2620,7 @@ displayShortBounds 1
 editShortBounds 1
 uid 183,0
 optionalChildren [
-*79 (Sheet
+*78 (Sheet
 sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
@@ -2655,59 +2637,53 @@ cellColor "39936,56832,65280"
 fontColor "0,0,0"
 font "Tahoma,10,0"
 )
-emptyMRCItem *80 (MRCItem
+emptyMRCItem *79 (MRCItem
 litem &55
-pos 5
+pos 4
 dimension 20
 )
 uid 185,0
 optionalChildren [
-*81 (MRCItem
+*80 (MRCItem
 litem &56
 pos 0
 dimension 20
 uid 186,0
 )
-*82 (MRCItem
+*81 (MRCItem
 litem &57
 pos 1
 dimension 23
 uid 187,0
 )
-*83 (MRCItem
+*82 (MRCItem
 litem &58
 pos 2
 hidden 1
 dimension 20
 uid 188,0
 )
-*84 (MRCItem
+*83 (MRCItem
 litem &74
 pos 0
 dimension 20
 uid 159,0
 )
-*85 (MRCItem
+*84 (MRCItem
 litem &75
 pos 1
 dimension 20
 uid 161,0
 )
-*86 (MRCItem
+*85 (MRCItem
 litem &76
 pos 2
 dimension 20
 uid 337,0
 )
-*87 (MRCItem
+*86 (MRCItem
 litem &77
 pos 3
-dimension 20
-uid 339,0
-)
-*88 (MRCItem
-litem &78
-pos 4
 dimension 20
 uid 745,0
 )
@@ -2722,85 +2698,85 @@ textAngle 90
 )
 uid 189,0
 optionalChildren [
-*89 (MRCItem
+*87 (MRCItem
 litem &59
 pos 0
 dimension 20
 uid 190,0
 )
-*90 (MRCItem
+*88 (MRCItem
 litem &61
 pos 1
 dimension 50
 uid 191,0
 )
-*91 (MRCItem
+*89 (MRCItem
 litem &62
 pos 2
 dimension 70
 uid 192,0
 )
-*92 (MRCItem
+*90 (MRCItem
 litem &63
 pos 3
 dimension 50
 uid 193,0
 )
-*93 (MRCItem
+*91 (MRCItem
 litem &64
 pos 4
 dimension 80
 uid 194,0
 )
-*94 (MRCItem
+*92 (MRCItem
 litem &65
 pos 5
 dimension 80
 uid 195,0
 )
-*95 (MRCItem
+*93 (MRCItem
 litem &66
 pos 6
 dimension 40
 uid 196,0
 )
-*96 (MRCItem
+*94 (MRCItem
 litem &67
 pos 7
 dimension 100
 uid 197,0
 )
-*97 (MRCItem
+*95 (MRCItem
 litem &68
 pos 8
 dimension 60
 uid 198,0
 )
-*98 (MRCItem
+*96 (MRCItem
 litem &69
 pos 9
 dimension 130
 uid 199,0
 )
-*99 (MRCItem
+*97 (MRCItem
 litem &70
 pos 10
 dimension 56
 uid 200,0
 )
-*100 (MRCItem
+*98 (MRCItem
 litem &71
 pos 11
 dimension 50
 uid 201,0
 )
-*101 (MRCItem
+*99 (MRCItem
 litem &72
 pos 12
 dimension 50
 uid 202,0
 )
-*102 (MRCItem
+*100 (MRCItem
 litem &73
 pos 13
 dimension 80
@@ -2822,38 +2798,38 @@ uid 163,0
 cdmCsm &1
 genericsCommonDM (CommonDM
 ldm (LogicalDM
-emptyRow *103 (LEmptyRow
+emptyRow *101 (LEmptyRow
 )
 uid 205,0
 optionalChildren [
-*104 (RefLabelRowHdr
+*102 (RefLabelRowHdr
 )
-*105 (TitleRowHdr
+*103 (TitleRowHdr
 )
-*106 (FilterRowHdr
+*104 (FilterRowHdr
 )
-*107 (RefLabelColHdr
+*105 (RefLabelColHdr
 tm "RefLabelColHdrMgr"
 )
-*108 (RowExpandColHdr
+*106 (RowExpandColHdr
 tm "RowExpandColHdrMgr"
 )
-*109 (GroupColHdr
+*107 (GroupColHdr
 tm "GroupColHdrMgr"
 )
-*110 (NameColHdr
+*108 (NameColHdr
 tm "GenericNameColHdrMgr"
 )
-*111 (TypeColHdr
+*109 (TypeColHdr
 tm "GenericTypeColHdrMgr"
 )
-*112 (InitColHdr
+*110 (InitColHdr
 tm "GenericValueColHdrMgr"
 )
-*113 (PragmaColHdr
+*111 (PragmaColHdr
 tm "GenericPragmaColHdrMgr"
 )
-*114 (EolColHdr
+*112 (EolColHdr
 tm "GenericEolColHdrMgr"
 )
 ]
@@ -2863,7 +2839,7 @@ displayShortBounds 1
 editShortBounds 1
 uid 217,0
 optionalChildren [
-*115 (Sheet
+*113 (Sheet
 sheetRow (SheetRow
 headerVa (MVa
 cellColor "49152,49152,49152"
@@ -2880,27 +2856,27 @@ cellColor "39936,56832,65280"
 fontColor "0,0,0"
 font "Tahoma,10,0"
 )
-emptyMRCItem *116 (MRCItem
-litem &103
+emptyMRCItem *114 (MRCItem
+litem &101
 pos 0
 dimension 20
 )
 uid 219,0
 optionalChildren [
-*117 (MRCItem
-litem &104
+*115 (MRCItem
+litem &102
 pos 0
 dimension 20
 uid 220,0
 )
-*118 (MRCItem
-litem &105
+*116 (MRCItem
+litem &103
 pos 1
 dimension 23
 uid 221,0
 )
-*119 (MRCItem
-litem &106
+*117 (MRCItem
+litem &104
 pos 2
 hidden 1
 dimension 20
@@ -2917,44 +2893,44 @@ textAngle 90
 )
 uid 223,0
 optionalChildren [
-*120 (MRCItem
-litem &107
+*118 (MRCItem
+litem &105
 pos 0
 dimension 20
 uid 224,0
 )
-*121 (MRCItem
-litem &109
+*119 (MRCItem
+litem &107
 pos 1
 dimension 50
 uid 225,0
 )
-*122 (MRCItem
-litem &110
+*120 (MRCItem
+litem &108
 pos 2
 dimension 100
 uid 226,0
 )
-*123 (MRCItem
-litem &111
+*121 (MRCItem
+litem &109
 pos 3
 dimension 100
 uid 227,0
 )
-*124 (MRCItem
-litem &112
+*122 (MRCItem
+litem &110
 pos 4
 dimension 50
 uid 228,0
 )
-*125 (MRCItem
-litem &113
+*123 (MRCItem
+litem &111
 pos 5
 dimension 50
 uid 229,0
 )
-*126 (MRCItem
-litem &114
+*124 (MRCItem
+litem &112
 pos 6
 dimension 80
 uid 230,0

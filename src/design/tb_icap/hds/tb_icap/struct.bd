@@ -9,10 +9,6 @@ unitName "std_logic_1164"
 )
 (DmPackageRef
 library "ieee"
-unitName "std_logic_arith"
-)
-(DmPackageRef
-library "ieee"
 unitName "numeric_std"
 itemName "ALL"
 )
@@ -96,7 +92,7 @@ value "T:\\Reconfiguracion_Dinamica\\src\\design\\tb_icap\\hds\\tb_icap"
 )
 (vvPair
 variable "date"
-value "15/09/2016"
+value "22/09/2016"
 )
 (vvPair
 variable "day"
@@ -108,7 +104,7 @@ value "jueves"
 )
 (vvPair
 variable "dd"
-value "15"
+value "22"
 )
 (vvPair
 variable "entity_name"
@@ -136,7 +132,7 @@ value "Juan Lanchares"
 )
 (vvPair
 variable "graphical_source_date"
-value "15/09/2016"
+value "22/09/2016"
 )
 (vvPair
 variable "graphical_source_group"
@@ -148,7 +144,7 @@ value "LANCHARES"
 )
 (vvPair
 variable "graphical_source_time"
-value "11:44:11"
+value "17:19:24"
 )
 (vvPair
 variable "group"
@@ -264,7 +260,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "11:44:11"
+value "17:19:24"
 )
 (vvPair
 variable "unit"
@@ -634,7 +630,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,4600,37000,5400"
-st "SIGNAL CLK      : std_logic"
+st "SIGNAL CLK      : std_logic
+"
 )
 )
 *13 (Net
@@ -651,7 +648,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,5400,37000,6200"
-st "SIGNAL CSB      : std_logic"
+st "SIGNAL CSB      : std_logic
+"
 )
 )
 *14 (Net
@@ -659,7 +657,7 @@ uid 185,0
 decl (Decl
 n "RDWRB"
 t "std_logic"
-o 6
+o 5
 suid 4,0
 )
 declText (MLText
@@ -668,7 +666,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,6200,37000,7000"
-st "SIGNAL RDWRB    : std_logic"
+st "SIGNAL RDWRB    : std_logic
+"
 )
 )
 *15 (PortIoOut
@@ -800,16 +799,25 @@ end process p_clk;
 
 p_csb : process
 begin
+  csb <= '1';
+  wait for 5000 ns;
   csb <= '0';
-  wait for 2700 ns;
-  csb <= '0';
+  wait for 2000 ns;
+  csb<='1';
+  wait for 2000 ns;
+  csb<='0';
   wait;
 end process p_csb; 
 
 p_RDWRB : process
 begin
+  RDWRB <= '1';
+  wait for 5000 ns;
   RDWRB <= '0';
-  wait for 2650 ns;
+ 
+  wait for 2000 ns;
+  RDWRB <= '1';
+    wait for 2000 ns;
   RDWRB <= '0';
   wait;
 end process p_RDWRB; 
@@ -823,6 +831,9 @@ begin
   capacita <= '1';
   wait;
 end process p_capacita; 
+
+
+
 
 
 
@@ -917,7 +928,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,2800,44000,3600"
-st "O        : std_logic_vector(31 downto 0)"
+st "O        : std_logic_vector(31 downto 0)
+"
 )
 )
 *22 (Net
@@ -938,7 +950,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,2000,37500,2800"
-st "BUSY     : std_ulogic := '1'"
+st "BUSY     : std_ulogic := '1'
+"
 )
 )
 *23 (HdlText
@@ -977,9 +990,9 @@ generic  map  (
 DEVICE_ID  =>  X\"04250093\", --  Specifies  the  pre-programmed  Device  ID  value
 ICAP_WIDTH  =>  \"X8\", --  Specifies  the  input  and  output  data  width  to  be  used  with  the
 --  ICAP_VIRTEX6.
-SIM_CFG_FILE_NAME  =>  \"T:\\Reconfiguracion_Dinamica\\sim\\simula.rbt\"    --  Specifies  the  Raw  Bitstream  (RBT)  file  to  be  parsed  by  the  simulation
+--SIM_CFG_FILE_NAME  =>  \"T:\\Reconfiguracion_Dinamica\\sim\\simula.rbt\"    --  Specifies  the  Raw  Bitstream  (RBT)  file  to  be  parsed  by  the  simulation
 --  model
---SIM_CFG_FILE_NAME  =>  \"none\"
+SIM_CFG_FILE_NAME  =>  \"NONE\"
 
 
 )
@@ -992,6 +1005,7 @@ I  =>  I, --  32-bit  Configuration  data  input  bus
 RDWRB  =>  RDWRB    --  1-bit  Read/Write  Select  input
 );
 --  End  of  ICAP_VIRTEX6_inst  instantiation                                  
+
 
 
 
@@ -1157,7 +1171,7 @@ decl (Decl
 n "i"
 t "std_logic_vector"
 b "(31 DOWNTO 0)"
-o 6
+o 7
 suid 18,0
 )
 declText (MLText
@@ -1166,7 +1180,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,7800,47500,8600"
-st "SIGNAL i        : std_logic_vector(31 DOWNTO 0)"
+st "SIGNAL i        : std_logic_vector(31 DOWNTO 0)
+"
 )
 )
 *32 (Net
@@ -1175,7 +1190,7 @@ lang 2
 decl (Decl
 n "capacita"
 t "std_logic"
-o 7
+o 6
 suid 20,0
 )
 declText (MLText
@@ -1184,7 +1199,8 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,7000,37000,7800"
-st "SIGNAL capacita : std_logic"
+st "SIGNAL capacita : std_logic
+"
 )
 )
 *33 (Wire
@@ -1550,10 +1566,9 @@ uid 43,0
 va (VaSet
 font "arial,8,0"
 )
-xt "0,1000,12000,7000"
+xt "0,1000,12000,6000"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE ieee.std_logic_arith.all;
 USE ieee.numeric_std.ALL;
 LIBRARY UNISIM;
 USE UNISIM.vcomponents.ALL;"
@@ -1637,12 +1652,12 @@ tm "BdCompilerDirectivesTextMgr"
 ]
 associable 1
 )
-windowSize "0,0,1681,1026"
-viewArea "-45269,-868,64374,64782"
+windowSize "0,24,1681,1050"
+viewArea "-45300,-900,63675,64350"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 1257,0
+lastUid 1404,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0
@@ -2771,7 +2786,7 @@ m 4
 decl (Decl
 n "RDWRB"
 t "std_logic"
-o 6
+o 5
 suid 4,0
 )
 )
@@ -2817,7 +2832,7 @@ decl (Decl
 n "i"
 t "std_logic_vector"
 b "(31 DOWNTO 0)"
-o 6
+o 7
 suid 18,0
 )
 )
@@ -2830,7 +2845,7 @@ m 4
 decl (Decl
 n "capacita"
 t "std_logic"
-o 7
+o 6
 suid 20,0
 )
 )

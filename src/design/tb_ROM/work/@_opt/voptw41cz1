@@ -1,0 +1,361 @@
+m255
+K3
+13
+cModel Technology
+Z0 dT:\Reconfiguracion_Dinamica\work\compilation\todo
+T_opt
+VE2D7>JHU48]bE3;aS]K3e3
+04 4 6 work todo struct 1
+=1-d4bed96626ca-57b4233e-23e-17f0
+o-quiet +acc -auto_acc_if_foreign -work todo -L todo -L estatico -L dinamico_drc_fast -L dinamico_iz_slow
+Z1 n@_opt
+Z2 OL;O;10.1d;51
+Z3 dT:\Reconfiguracion_Dinamica\work\compilation\todo
+Econtrol
+Z4 w1475586843
+Z5 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R3
+Z8 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_fsm.vhd
+Z9 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_fsm.vhd
+l0
+L13
+VC9zIS=PZGQlNCc@c8bdLO0
+Z10 OL;C;10.1d;51
+31
+Z11 !s108 1475591106.399000
+Z12 !s90 -work|todo|-nologo|-93|-f|C:/cygwin64/tmp/Files0|
+Z13 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_icap_struct.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro_en.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_fsm.vhd|
+Z14 o-work todo -nologo -93
+Z15 tExplicit 1
+!s100 FiV[akhNDkEFR7LTSSNCe2
+!i10b 1
+Afsm
+R5
+DEx4 work 7 control 0 22 C9zIS=PZGQlNCc@c8bdLO0
+Z16 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R6
+R7
+l61
+L45
+VT>zSFE<cmR^So<I0LfEWK3
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 b]Izdf0lg3D1A>zDVJS;F1
+!i10b 1
+Econtrol_icap
+Z17 w1475587968
+Z18 DPx6 unisim 11 vcomponents 0 22 ^SgSiH]fe0j`VL_8Rhmkj2
+R16
+R6
+R7
+R3
+Z19 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_icap_struct.vhd
+Z20 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_icap_struct.vhd
+l0
+L17
+V1SYDWlkHECE>;kkP:SbJ<3
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 b=0@D]PfaTkn<BePG]=ZG0
+!i10b 1
+Astruct
+DEx10 rom_rapida 10 rom_rapida 0 22 nAfkeM@jXd;l<g04cf;891
+DEx9 rom_lenta 9 rom_lenta 0 22 Qd>K@i5FbLVa8Y<:U2hFT2
+DEx4 todo 11 registro_en 0 22 X<gPRH`U15:QhSH]I2U=?0
+DEx4 todo 3 mux 0 22 lBaVn6^mIGK^F4ba??j`22
+DEx4 todo 9 inversion 0 22 =m0<iWBAhiaO7<hJ8;n^K1
+DEx4 todo 14 generador_addr 0 22 Bm2^7E]g91ii<e??33aYd0
+DEx4 todo 13 discriminador 0 22 O?BgSDXi4Um692RPeMzU51
+R5
+DEx4 todo 7 control 0 22 C9zIS=PZGQlNCc@c8bdLO0
+DEx4 work 12 control_icap 0 22 1SYDWlkHECE>;kkP:SbJ<3
+R18
+R16
+R6
+R7
+l162
+L54
+VV>]oNf`JUJFURAjiTG7nL2
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 lJo4Kk=PeOQ3C<^QWK6kW0
+!i10b 1
+Ediscriminador
+Z21 w1475088056
+R16
+R6
+R7
+R3
+Z22 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/discriminador.vhd
+Z23 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/discriminador.vhd
+l0
+L15
+VO?BgSDXi4Um692RPeMzU51
+R10
+33
+Z24 !s108 1475495788.703000
+Z25 !s90 -work|todo|-nologo|-2008|-f|C:/cygwin64/tmp/Files1|
+Z26 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/mux.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/inversion.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/generador_addr.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/discriminador.vhd|
+Z27 o-work todo -nologo -2008
+R15
+!s100 Tl?n6mNgTYHCCACaXl4bC0
+!i10b 1
+Abehavior
+R16
+R6
+R7
+DEx4 work 13 discriminador 0 22 O?BgSDXi4Um692RPeMzU51
+l26
+L24
+VSR:iU<>PS@m`nCLh[fHUj2
+R10
+33
+R24
+R25
+R26
+R27
+R15
+!s100 @BbkBR>c]QhRT7W2e@7zJ3
+!i10b 1
+Egenerador_addr
+Z28 w1475087930
+R16
+R6
+R7
+R3
+Z29 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/generador_addr.vhd
+Z30 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/generador_addr.vhd
+l0
+L15
+VBm2^7E]g91ii<e??33aYd0
+R10
+33
+R24
+R25
+R26
+R27
+R15
+!s100 i<3@6>BC75n^a8G@Gd9:?3
+!i10b 1
+Acomportamiento
+R16
+R6
+R7
+DEx4 work 14 generador_addr 0 22 Bm2^7E]g91ii<e??33aYd0
+l27
+L25
+V<;d5WUm1WM;@Rclg15dF;2
+R10
+33
+R24
+R25
+R26
+R27
+R15
+!s100 VZk]_E75;O<MMAF8kM2Iz2
+!i10b 1
+Einversion
+Z31 w1475498847
+R16
+R6
+R7
+R3
+Z32 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/inversion.vhd
+Z33 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/inversion.vhd
+l0
+L14
+V=m0<iWBAhiaO7<hJ8;n^K1
+R10
+33
+R24
+R25
+R26
+R27
+R15
+!s100 OOke9:I5kob:J8>]3EWJg0
+!i10b 1
+Abehavior
+R16
+R6
+R7
+DEx4 work 9 inversion 0 22 =m0<iWBAhiaO7<hJ8;n^K1
+l36
+L21
+V<bL8aOj]zVg2>Vk0O^cYR0
+R10
+33
+R24
+R25
+R26
+R27
+R15
+!s100 QNPjR3aH^JzLdhjdb6Dg>2
+!i10b 1
+Emux
+R21
+R16
+R6
+R7
+R3
+Z34 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/mux.vhd
+Z35 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/mux.vhd
+l0
+L6
+VlBaVn6^mIGK^F4ba??j`22
+R10
+33
+R24
+R25
+R26
+R27
+R15
+!s100 dcaTBS<eX0NO]i[kj]oYT0
+!i10b 1
+Abehavior
+R16
+R6
+R7
+DEx4 work 3 mux 0 22 lBaVn6^mIGK^F4ba??j`22
+l17
+L16
+VWoXCX]CUU@:=FYlz3dLEk2
+R10
+33
+R24
+R25
+R26
+R27
+R15
+!s100 49mo7To==<S[nUm4`MV8?2
+!i10b 1
+Eregistro
+Z36 w1475087997
+R16
+R6
+R7
+R3
+Z37 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro.vhd
+Z38 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro.vhd
+l0
+L22
+Vn6[A238QKEWFR<od=SAU20
+R10
+33
+R24
+R25
+R26
+R27
+R15
+!s100 Ch=4=z<zM_dE7]hz74LU@2
+!i10b 1
+Artl
+R16
+R6
+R7
+DEx4 work 8 registro 0 22 n6[A238QKEWFR<od=SAU20
+l33
+L31
+V8FJkaJ_10kj?k5AKQSlGB0
+R10
+33
+R24
+R25
+R26
+R27
+R15
+!s100 oDh[fYN5e`WSnZZZOooF?3
+!i10b 1
+Eregistro_en
+Z39 w1475583725
+R16
+R6
+R7
+R3
+Z40 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro_en.vhd
+Z41 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro_en.vhd
+l0
+L22
+VX<gPRH`U15:QhSH]I2U=?0
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 T0DbVZeHcRdgBbcUHkD[L0
+!i10b 1
+Artl
+R16
+R6
+R7
+DEx4 work 11 registro_en 0 22 X<gPRH`U15:QhSH]I2U=?0
+l33
+L31
+V;6Ka:m>9Ne=QN@EiUF_c^1
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 b`<b0@01ZD;5WeTSh`@zI2
+!i10b 1
+Etodo
+Z42 w1473090199
+R5
+R6
+R7
+Z43 dT:\Reconfiguracion_Dinamica\src\design\todo\work
+Z44 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/todo_struct.vhd
+Z45 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/todo_struct.vhd
+l0
+L13
+Va5B7h>3GERcm1T_V17^Sk1
+R10
+31
+Z46 !s108 1473415027.418000
+Z47 !s90 -work|todo|-nologo|-93|-f|C:/cygwin64/tmp/Files3|
+Z48 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/todo_struct.vhd|
+R14
+R15
+!s100 bdRn8L_UFR3_JLDKUjH@53
+!i10b 1
+Astruct
+DEx8 estatico 12 fsm_estatico 0 22 md9YU54^G_I@iVl>Q:cz31
+DEx16 dinamico_iz_slow 20 fsm_dinamico_iz_slow 0 22 11Ri7846P1d>97f;W1W:13
+DEx17 dinamico_drc_fast 21 fsm_dinamico_drc_fast 0 22 ^=0nzOhVd;cQTn8FWJdJU0
+DEx4 work 4 todo 0 22 a5B7h>3GERcm1T_V17^Sk1
+R5
+R6
+R7
+l87
+L44
+VR3UP]ESK<kgZQfHOiYlZL3
+R10
+31
+R46
+R47
+R48
+R14
+R15
+!s100 <Ck<kW8M;Sj3RKM8K`1KO3
+!i10b 1

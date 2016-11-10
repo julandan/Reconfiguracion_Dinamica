@@ -15,8 +15,8 @@ unitName "std_logic_arith"
 instances [
 (Instance
 name "i_todo"
-duLibraryName "todo"
-duName "todo"
+duLibraryName "TODO"
+duName "top_estatico"
 elements [
 ]
 mwi 0
@@ -81,19 +81,19 @@ value "T:\\Reconfiguracion_Dinamica\\src\\design\\tb_todo\\hds\\tb_todo"
 )
 (vvPair
 variable "date"
-value "05/09/2016"
+value "21/09/2016"
 )
 (vvPair
 variable "day"
-value "lu."
+value "mi."
 )
 (vvPair
 variable "day_long"
-value "lunes"
+value "miércoles"
 )
 (vvPair
 variable "dd"
-value "05"
+value "21"
 )
 (vvPair
 variable "entity_name"
@@ -121,7 +121,7 @@ value "Juan Lanchares"
 )
 (vvPair
 variable "graphical_source_date"
-value "05/09/2016"
+value "21/09/2016"
 )
 (vvPair
 variable "graphical_source_group"
@@ -133,7 +133,7 @@ value "LANCHARES"
 )
 (vvPair
 variable "graphical_source_time"
-value "08:58:15"
+value "09:27:45"
 )
 (vvPair
 variable "group"
@@ -233,7 +233,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "08:58:15"
+value "09:27:45"
 )
 (vvPair
 variable "unit"
@@ -729,8 +729,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,5400,39000,6200"
-st "SIGNAL clk          : std_logic
-"
+st "SIGNAL clk          : std_logic"
 )
 )
 *17 (Net
@@ -748,8 +747,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,2000,35500,2800"
-st "activa_led_e : std_logic
-"
+st "activa_led_e : std_logic"
 )
 )
 *18 (Net
@@ -767,8 +765,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,3600,35500,4400"
-st "activa_led_w : std_logic
-"
+st "activa_led_w : std_logic"
 )
 )
 *19 (Net
@@ -786,8 +783,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,2800,35500,3600"
-st "activa_led_n : std_logic
-"
+st "activa_led_n : std_logic"
 )
 )
 *20 (PortIoOut
@@ -1172,8 +1168,8 @@ uid 434,0
 va (VaSet
 font "arial,8,1"
 )
-xt "60200,17000,62400,18000"
-st "todo"
+xt "60200,17000,62900,18000"
+st "TODO"
 blo "60200,17800"
 tm "BdLibraryNameMgr"
 )
@@ -1182,8 +1178,8 @@ uid 435,0
 va (VaSet
 font "arial,8,1"
 )
-xt "60200,18000,62400,19000"
-st "todo"
+xt "60200,18000,65600,19000"
+st "top_estatico"
 blo "60200,18800"
 tm "CptNameMgr"
 )
@@ -1249,8 +1245,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,7000,39000,7800"
-st "SIGNAL start        : std_logic
-"
+st "SIGNAL start        : std_logic"
 )
 )
 *34 (Net
@@ -1268,8 +1263,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,6200,39000,7000"
-st "SIGNAL rst          : std_logic
-"
+st "SIGNAL rst          : std_logic"
 )
 )
 *35 (Wire
@@ -1607,7 +1601,7 @@ viewArea "-16450,-21625,92525,43625"
 cachedDiagramExtent "0,0,87000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 454,0
+lastUid 483,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

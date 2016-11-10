@@ -9,7 +9,8 @@ unitName "std_logic_1164"
 )
 (DmPackageRef
 library "ieee"
-unitName "std_logic_arith"
+unitName "numeric_std"
+itemName "ALL"
 )
 (DmPackageRef
 library "UNISIM"
@@ -429,19 +430,19 @@ value "T:\\Reconfiguracion_Dinamica\\src\\design\\tb_icap\\hds\\tb_icap"
 )
 (vvPair
 variable "date"
-value "13/09/2016"
+value "22/09/2016"
 )
 (vvPair
 variable "day"
-value "ma."
+value "ju."
 )
 (vvPair
 variable "day_long"
-value "martes"
+value "jueves"
 )
 (vvPair
 variable "dd"
-value "13"
+value "22"
 )
 (vvPair
 variable "entity_name"
@@ -469,7 +470,7 @@ value "Juan Lanchares"
 )
 (vvPair
 variable "graphical_source_date"
-value "13/09/2016"
+value "22/09/2016"
 )
 (vvPair
 variable "graphical_source_group"
@@ -481,7 +482,7 @@ value "LANCHARES"
 )
 (vvPair
 variable "graphical_source_time"
-value "09:41:00"
+value "17:19:20"
 )
 (vvPair
 variable "group"
@@ -597,7 +598,7 @@ value "symbol"
 )
 (vvPair
 variable "time"
-value "09:41:00"
+value "17:19:20"
 )
 (vvPair
 variable "unit"
@@ -1161,15 +1162,15 @@ font "arial,8,0"
 xt "0,1000,12000,6000"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE ieee.std_logic_arith.all;
+USE ieee.numeric_std.ALL;
 LIBRARY UNISIM;
 USE UNISIM.vcomponents.ALL;"
 tm "PackageList"
 )
 ]
 )
-windowSize "84,52,1104,742"
-viewArea "-1000,-1000,75032,50456"
+windowSize "84,52,1105,742"
+viewArea "-1019,-1019,74748,50193"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
@@ -1443,7 +1444,7 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 944,0
+lastUid 967,0
 okToSyncOnLoad 1
 OkToSyncGenericsOnLoad 1
 activeModelName "Symbol"

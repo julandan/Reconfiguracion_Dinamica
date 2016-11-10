@@ -15,7 +15,7 @@ unitName "std_logic_arith"
 instances [
 (Instance
 name "i_FSM_estatico"
-duLibraryName "estatico"
+duLibraryName "FSM_estatico"
 duName "FSM_estatico"
 elements [
 ]
@@ -81,19 +81,19 @@ value "T:\\Reconfiguracion_Dinamica\\src\\design\\tb_statico\\hds\\tb_FSM_estati
 )
 (vvPair
 variable "date"
-value "09/09/2016"
+value "21/09/2016"
 )
 (vvPair
 variable "day"
-value "vi."
+value "mi."
 )
 (vvPair
 variable "day_long"
-value "viernes"
+value "miércoles"
 )
 (vvPair
 variable "dd"
-value "09"
+value "21"
 )
 (vvPair
 variable "entity_name"
@@ -121,7 +121,7 @@ value "Juan Lanchares"
 )
 (vvPair
 variable "graphical_source_date"
-value "09/09/2016"
+value "21/09/2016"
 )
 (vvPair
 variable "graphical_source_group"
@@ -133,7 +133,7 @@ value "LANCHARES"
 )
 (vvPair
 variable "graphical_source_time"
-value "10:56:19"
+value "16:12:29"
 )
 (vvPair
 variable "group"
@@ -237,7 +237,7 @@ value "struct"
 )
 (vvPair
 variable "time"
-value "10:56:19"
+value "16:12:29"
 )
 (vvPair
 variable "unit"
@@ -289,7 +289,7 @@ va (VaSet
 fg "0,0,32768"
 bg "0,0,32768"
 )
-xt "36200,48000,49100,49000"
+xt "36200,48000,49000,49000"
 st "
 by %user on %dd %month %year
 "
@@ -608,8 +608,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,2000,37000,2800"
-st "activa_dinamico : std_logic
-"
+st "activa_dinamico : std_logic"
 )
 )
 *13 (Net
@@ -627,8 +626,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,4600,40500,5400"
-st "SIGNAL clk             : std_logic
-"
+st "SIGNAL clk             : std_logic"
 )
 )
 *14 (Net
@@ -646,8 +644,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,5400,40500,6200"
-st "SIGNAL rst             : std_logic
-"
+st "SIGNAL rst             : std_logic"
 )
 )
 *15 (HdlText
@@ -859,8 +856,7 @@ va (VaSet
 font "Courier New,8,0"
 )
 xt "22000,2800,37000,3600"
-st "activa_led_n    : std_logic
-"
+st "activa_led_n    : std_logic"
 )
 )
 *22 (SaComponent
@@ -1072,8 +1068,8 @@ uid 304,0
 va (VaSet
 font "arial,8,1"
 )
-xt "39200,19000,42500,20000"
-st "estatico"
+xt "39200,19000,45000,20000"
+st "FSM_estatico"
 blo "39200,19800"
 tm "BdLibraryNameMgr"
 )
@@ -1398,7 +1394,7 @@ viewArea "-21800,-13100,103482,53500"
 cachedDiagramExtent "0,0,73000,49000"
 hasePageBreakOrigin 1
 pageBreakOrigin "0,0"
-lastUid 310,0
+lastUid 337,0
 defaultCommentText (CommentText
 shape (Rectangle
 layer 0

@@ -1,0 +1,327 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'top_estado'
+
+Design Information
+------------------
+Command Line   : map -intstyle pa -w config_1.ngd 
+Target Device  : xc6vlx240t
+Target Package : ff1156
+Target Speed   : -1
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Tue Nov 01 09:31:47 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Slice Logic Utilization:
+  Number of Slice Registers:                   143 out of 301,440    1%
+    Number used as Flip Flops:                 143
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        321 out of 150,720    1%
+    Number used as logic:                      316 out of 150,720    1%
+      Number using O6 output only:             175
+      Number using O5 output only:              15
+      Number using O5 and O6:                  126
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of  58,400    0%
+    Number used exclusively as route-thrus:      5
+      Number with same-slice register load:      4
+      Number with same-slice carry load:         1
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   180 out of  37,680    1%
+  Number of LUT Flip Flop pairs used:          374
+    Number with an unused Flip Flop:           251 out of     374   67%
+    Number with an unused LUT:                  53 out of     374   14%
+    Number of fully used LUT-FF pairs:          70 out of     374   18%
+    Number of unique control sets:              15
+    Number of slice register sites lost
+      to control set restrictions:              81 out of 301,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        43 out of     600    7%
+    Number of LOCed IOBs:                        8 out of      43   18%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                 40 out of     416    9%
+    Number using RAMB36E1 only:                 40
+    Number using FIFO36E1 only:                  0
+  Number of RAMB18E1/FIFO18E1s:                 16 out of     832    1%
+    Number using RAMB18E1 only:                 16
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      2 out of      32    6%
+    Number used as BUFGs:                        2
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     720    0%
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     720    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of     144    0%
+  Number of BUFIODQSs:                           0 out of      72    0%
+  Number of BUFRs:                               0 out of      36    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     768    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of      20    0%
+  Number of IBUFDS_GTXE1s:                       0 out of      12    0%
+  Number of ICAPs:                               1 out of       2   50%
+  Number of IDELAYCTRLs:                         0 out of      18    0%
+  Number of IODELAYE1s:                          0 out of     720    0%
+  Number of MMCM_ADVs:                           0 out of      12    0%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+Average Fanout of Non-Clock Nets:                3.25
+
+Peak Memory Usage:  916 MB
+Total REAL time to MAP completion:  1 mins 21 secs 
+Total CPU time to MAP completion:   1 mins 17 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:MapLib:328 - Block i_control_icap_estado/i_inversion is not a recognized
+   logical block. The mapper will continue to process the design but there may
+   be design problems if this block does not get trimmed.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:56 - Part 'xc6vlx240t' is not a WebPack part.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 43 IOs, 8 are locked
+   and 35 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  11 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		i_FSM_estatico/XST_GND
+VCC 		i_FSM_estatico/XST_VCC
+GND 		i_black_box/XST_GND
+GND 		i_black_box/i_dinamico_estado_w/XST_GND
+VCC 		i_black_box/i_dinamico_estado_w/XST_VCC
+GND 		i_control_icap_estado/i_rom_estado_e/XST_GND
+VCC 		i_control_icap_estado/i_rom_estado_e/XST_VCC
+GND 		i_control_icap_estado/i_rom_estado_w/XST_GND
+VCC 		i_control_icap_estado/i_rom_estado_w/XST_VCC
+GND 		i_control_icap_estado/i_gen_addr_estado/XST_GND
+VCC 		i_control_icap_estado/i_gen_addr_estado/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| GPIO_LED_E                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| GPIO_LED_N                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| GPIO_LED_W                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[0]                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[1]                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[2]                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[3]                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[4]                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[5]                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[6]                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[7]                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[8]                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[9]                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[10]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[11]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[12]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[13]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[14]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[15]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[16]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[17]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[18]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[19]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[20]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[21]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[22]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[23]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[24]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[25]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[26]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[27]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[28]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[29]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[30]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| O[31]                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| busy                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| estado[0]                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| estado[1]                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rst                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN |          |
+| start                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN |          |
+| trigger_e                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN |          |
+| trigger_w                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              | PULLDOWN |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  Preserved Partitions:
+
+
+  Implemented Partitions:
+
+    Partition "/top_estado":
+Attribute STATE set to IMPLEMENT.
+
+    Partition "/top_estado/i_black_box" (Reconfigurable Module "dinamico_w"):
+Attribute STATE set to IMPLEMENT.
+
+-------------------------------
+
+Partition Resource Summary:
+---------------------------
+Resources are reported for each Partition followed in parenthesis by resources
+for the Partition plus all of its descendents.
+
+Partition "/top_estado":
+  State=implement
+  Slice Logic Utilization:
+    Number of Slice Registers:             111 (143)
+    Number of Slice LUTs:                  253 (316)
+      Number used as logic:                253 (316)
+  Slice Logic Distribution:
+    Number of occupied Slices:             153 (180)
+    Number of LUT Flip Flop pairs used:    306 (374)
+      Number with an unused Flip Flop:     213 out of    306   69%
+      Number with an unused LUT:            48 out of    306   15%
+      Number of fully used LUT-FF pairs:    45 out of    306   14%
+  IO Utilization:
+    Number of bonded IOBs:                  43 (43)
+  Number of RAMB36E1/FIFO36E1s:             40 (40)
+    Number using RAMB36E1 only:             40
+    Number using FIFO36E1 only:              0
+  Number of RAMB18E1/FIFO18E1s:             16 (16)
+    Number using RAMB18E1 only:             16
+    Number using FIFO18E1 only:              0
+  Number of BUFG/BUFGCTRLs:                  2 (2)
+    Number using BUFGs:                      2
+    Number using BUFGCTRLs:                  0
+  Number of ICAP:                            1 (1)
+  Number of STARTUP:                         1 (1)
+
+Partition "/top_estado/i_black_box" (Reconfigurable Module "dinamico_w") (Area Group "pblock_i_black_box"):
+  State=implement
+  Slice Logic Utilization:
+    Number of Slice Registers:              32 (32)
+    Number of Slice LUTs:                   63 (63)
+      Number used as logic:                 63 (63)
+  Slice Logic Distribution:
+    Number of occupied Slices:              27 (27)
+    Number of LUT Flip Flop pairs used:     68 (68)
+      Number with an unused Flip Flop:      38 out of     68   55%
+      Number with an unused LUT:             5 out of     68    7%
+      Number of fully used LUT-FF pairs:    25 out of     68   36%
+
+
+Area Group Information
+----------------------
+
+Area Group "pblock_i_black_box"
+  No COMPRESSION specified for Area Group "pblock_i_black_box"
+  RANGE: SLICE_X112Y1:SLICE_X129Y18
+  Slice Logic Utilization:
+    Number of Slice Registers:              32 out of  2,592    1%
+    Number of Slice LUTs:                   63 out of  1,296    4%
+      Number used as logic:                 63
+  Slice Logic Distribution:
+    Number of occupied Slices:              27 out of    324    8%
+    Number of LUT Flip Flop pairs used:     68
+      Number with an unused Flip Flop:      38 out of     68   55%
+      Number with an unused LUT:             5 out of     68    7%
+      Number of fully used LUT-FF pairs:    25 out of     68   36%
+
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

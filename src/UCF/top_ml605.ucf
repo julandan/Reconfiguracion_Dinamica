@@ -14,6 +14,14 @@ NET "GPIO_LED_W" LOC = AD21;
 NET "clk" IOSTANDARD = LVCMOS25;
 NET "clk" LOC = U23;
 
+## ML605 200 MHz LVDS oscillator - single input clock design (2.5V bank)
+#NET "SYSCLK_P" LOC = J9;
+#NET "SYSCLK_P" IOSTANDARD = LVDS_25;
+#NET "SYSCLK_P" DIFF_TERM = "TRUE";
+#NET "SYSCLK_N" LOC = H9;
+#NET "SYSCLK_N" IOSTANDARD = LVDS_25;
+#NET "SYSCLK_N" DIFF_TERM = "TRUE";
+
 
 
 
@@ -27,10 +35,21 @@ NET "start" IOSTANDARD = LVCMOS25;
 NET "start" PULLDOWN;
 NET "start" LOC = A19;
 
+#pulso el izquierda
+NET "trigger_w" IOSTANDARD = LVCMOS25;
+NET "trigger_w" PULLDOWN;
+NET "trigger_w" LOC = H17;
+
+#pulso el derecha
+NET "trigger_e" IOSTANDARD = LVCMOS25;
+NET "trigger_e" PULLDOWN;
+NET "trigger_e" LOC = G17;
+
+
+
 
 
 INST "i_black_box" AREA_GROUP = "pblock_i_black_box";
-AREA_GROUP "pblock_i_black_box" RANGE=SLICE_X100Y1:SLICE_X105Y11;
-AREA_GROUP "pblock_i_black_box" RANGE=DSP48_X4Y2:DSP48_X4Y3;
+AREA_GROUP "pblock_i_black_box" RANGE=SLICE_X104Y1:SLICE_X129Y27;
 TIMESPEC TS_clk = PERIOD "clk" 5 ns;
 NET "clk" TNM_NET = "clk";

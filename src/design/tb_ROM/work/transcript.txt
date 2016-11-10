@@ -1,0 +1,152 @@
+# //  Questa Sim-64
+# //  Version 10.1d win64 Nov  1 2012
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L tb_ROM -L xilinxcorelib -L todo -L rom_e -L rom_w -L FSM_dinamico_w -L FSM_dinamico_e -L unisim -coverage -do {add log -r *} -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2015.1b/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2015.1b/resources/downstream/modelsim/ModelSim_64Bit.dll"} tb_ROM.tb_roms_generador_control(struct) 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# 
+# ** Warning: (vopt-3) System call GetVolumeInformation failed.
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "control(fsm)".
+# 
+# Loading C:/MentorGraphics/HDS_2015.1b/resources/downstream/modelsim/ModelSim_64Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading unisim.vcomponents
+# Loading work.tb_roms_generador_control(struct)#1
+# Loading fsm_dinamico_e.fsm_dinamico_e_dinamico(struct)#1
+# Loading fsm_dinamico_e.fsm_dinamico_e(fsm)#1
+# Loading fsm_dinamico_e.registro_e(rtl)#1
+# Loading fsm_dinamico_w.fsm_dinamico_w_dinamico(struct)#1
+# Loading fsm_dinamico_w.fsm_dinamico_w(fsm)#1
+# Loading fsm_dinamico_w.registro_w(rtl)#1
+# Loading todo.control_icap(struct)#1
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# ** Warning: (vsim-3479) Time unit 'ps' is less than the simulator resolution (1ns).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_roms_generador_control/i_control_icap/ICAP_VIRTEX6_inst
+# Loading unisim.icap_virtex6(icap_virtex6_v)#1
+# Loading unisim.sim_config_v6(sim_config_v6_v)#1
+# Loading rom_e.rom_e(rom_e_a)#1
+# Loading xilinxcorelib.blk_mem_gen_v7_3(behavioral)#1
+# Loading ieee.std_logic_textio(body)
+# Loading xilinxcorelib.blk_mem_gen_v7_3_mem_module(mem_module_behavioral)#1
+# ** Note:  Block Memory Generator data initialization complete.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# Loading xilinxcorelib.blk_mem_gen_v7_3_output_stage(output_stage_behavioral)#1
+# Loading xilinxcorelib.blk_mem_gen_v7_3_softecc_output_reg_stage(softecc_output_reg_stage_behavioral)#1
+# Loading rom_w.rom_w(rom_w_a)#1
+# ** Note:  Block Memory Generator data initialization complete.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# Loading todo.control(fsm)#1
+# Loading todo.discriminador(behavior)#1
+# Loading todo.generador_addr(comportamiento)#1
+# Loading todo.inversion(behavior)#1
+# Loading todo.mux(behavior)#1
+# Loading todo.registro(rtl)#1
+# Loading todo.registro_32(rtl)#1
+# Loading todo.registro_en(rtl)#1
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# 
+# add log -r * 
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_roms_generador_control/i_control_icap/i_control
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_roms_generador_control/U_0/i_FSM_dinamico_w
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_roms_generador_control/U_1/i_FSM_dinamico_e
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_control
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /tb_roms_generador_control/U_0/i_FSM_dinamico_w
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /tb_roms_generador_control/U_1/i_FSM_dinamico_e
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 10 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 10 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /tb_roms_generador_control/i_control_icap/i_control
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /tb_roms_generador_control/U_1/i_FSM_dinamico_e
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 10 ns  Iteration: 2  Instance: /tb_roms_generador_control/U_0/i_FSM_dinamico_w
+# ** Warning:  Warning :  ICAP_VIRTEX6 has not finished initialization. A message will be printed after the initialization. User need start read/write operation after that.
+#    Time: 10 ns  Iteration: 4  Instance: /tb_roms_generador_control/i_control_icap/ICAP_VIRTEX6_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 30 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 30 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 50 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 50 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 70 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 70 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 70 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 90 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 90 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 90 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 90 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 110 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 110 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_e/U0/native_mem_module/mem_module
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 110 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 110 ns  Iteration: 1  Instance: /tb_roms_generador_control/i_control_icap/i_rom_w/U0/native_mem_module/mem_module
+# ** Warning:  Warning :  ICAP_VIRTEX6 has not finished initialization. A message will be printed after the initialization. User need start read/write operation after that.
+#    Time: 110 ns  Iteration: 4  Instance: /tb_roms_generador_control/i_control_icap/ICAP_VIRTEX6_inst
+# ** Warning:  Warning :  ICAP_VIRTEX6 has not finished initialization. A message will be printed after the initialization. User need start read/write operation after that.
+#    Time: 350 ns  Iteration: 4  Instance: /tb_roms_generador_control/i_control_icap/ICAP_VIRTEX6_inst
+# ** Warning:  Warning :  ICAP_VIRTEX6 has not finished initialization. A message will be printed after the initialization. User need start read/write operation after that.
+#    Time: 530 ns  Iteration: 4  Instance: /tb_roms_generador_control/i_control_icap/ICAP_VIRTEX6_inst
+# ** Warning:  Warning :  ICAP_VIRTEX6 has not finished initialization. A message will be printed after the initialization. User need start read/write operation after that.
+#    Time: 550 ns  Iteration: 4  Instance: /tb_roms_generador_control/i_control_icap/ICAP_VIRTEX6_inst
+# ** Warning:  Message :  ICAP_VIRTEX6 has finished initialization. User can start read/write operation.
+#    Time: 1860 ns  Iteration: 3  Instance: /tb_roms_generador_control/i_control_icap/ICAP_VIRTEX6_inst
+run
+# 0
+# 
+add wave /tb_roms_generador_control/i_control_icap/i_control/current_state
+add wave /tb_roms_generador_control/i_control_icap/i_control/next_state
+run
+# 0
+# 

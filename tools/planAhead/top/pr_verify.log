@@ -1,0 +1,40 @@
+Release 14.7 - pr_verify P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Wed Nov 02 18:12:42 2016
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\pr_verify.exe -o
+C:/A_REPOSITORIO/investigacion/Reconfiguracion_Dinamica/tools/planAhead/top/pr_v
+erify.log
+C:/A_REPOSITORIO/investigacion/Reconfiguracion_Dinamica/tools/planAhead/top/top.
+runs/config_1/config_1_routed.ncd
+C:/A_REPOSITORIO/investigacion/Reconfiguracion_Dinamica/tools/planAhead/top/top.
+runs/config_2/config_2_routed.ncd
+
+Loading
+C:/A_REPOSITORIO/investigacion/Reconfiguracion_Dinamica/tools/planAhead/top/top.
+runs/config_1/config_1_routed.ncd:  Wed Nov 02 17:59:56 2016
+Loading
+C:/A_REPOSITORIO/investigacion/Reconfiguracion_Dinamica/tools/planAhead/top/top.
+runs/config_2/config_2_routed.ncd:  Wed Nov 02 18:10:24 2016
+
+----------------------------------------
+Analyzing Designs:
+ 
+C:/A_REPOSITORIO/investigacion/Reconfiguracion_Dinamica/tools/planAhead/top/top.
+runs/config_1/config_1_routed.ncd
+ 
+C:/A_REPOSITORIO/investigacion/Reconfiguracion_Dinamica/tools/planAhead/top/top.
+runs/config_2/config_2_routed.ncd
+
+  Number of matched proxy logic bels          = 5
+  Number of matched external nets             = 7
+  Number of matched global clock nets         = 2
+  Number of matched Reconfigurable Partitions = 0
+
+Verification completed successfully!
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\pr_verify.exe
+C:/A_REPOSITORIO/investigacion/Reconfiguracion_Dinamica/tools/planAhead/top/top.
+runs/config_1/config_1_routed.ncd
+C:/A_REPOSITORIO/investigacion/Reconfiguracion_Dinamica/tools/planAhead/top/top.
+runs/config_2/config_2_routed.ncd => PASS

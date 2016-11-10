@@ -1,0 +1,8 @@
+INTSTYLE=pa
+INFILE=C:\A_REPOSITORIO\investigacion\Reconfiguracion_Dinamica\tools\planAhead\top\top.runs\config_2\config_2_routed.ncd
+OUTFILE=C:\A_REPOSITORIO\investigacion\Reconfiguracion_Dinamica\tools\planAhead\top\top.runs\config_2\config_2.bit
+FAMILY=Virtex6
+PART=xc6vlx240t-1ff1156
+WORKINGDIR=C:\A_REPOSITORIO\investigacion\Reconfiguracion_Dinamica\tools\planAhead\top\top.runs\config_2
+LICENSE=ISE
+USER_INFO=208382042_210152018_210615453_663

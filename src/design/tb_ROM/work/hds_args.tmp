@@ -1,0 +1,1 @@
+ -do "add log -r *" -L tb_ROM -L xilinxcorelib -L todo -L rom_e -L rom_w -L FSM_dinamico_w -L FSM_dinamico_e -L unisim -l transcript.txt -i -t ns -multisource_delay latest +typdelays -coverage tb_ROM.tb_roms_generador_control(struct)

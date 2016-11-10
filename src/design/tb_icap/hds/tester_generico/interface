@@ -9,10 +9,6 @@ unitName "std_logic_1164"
 )
 (DmPackageRef
 library "ieee"
-unitName "std_logic_arith"
-)
-(DmPackageRef
-library "ieee"
 unitName "numeric_std"
 itemName "ALL"
 )
@@ -32,7 +28,7 @@ appVersion "2015.1b (Build 4)"
 model (Symbol
 commonDM (CommonDM
 ldm (LogicalDM
-suid 8,0
+suid 11,0
 usingSuid 1
 emptyRow *1 (LEmptyRow
 )
@@ -77,11 +73,11 @@ lang 2
 decl (Decl
 n "capacita"
 t "std_logic"
-o 7
-suid 6,0
+o 6
+suid 9,0
 )
 )
-uid 250,0
+uid 294,0
 )
 *15 (LogPort
 port (LogicalPort
@@ -89,10 +85,10 @@ decl (Decl
 n "CLK"
 t "std_logic"
 o 3
-suid 7,0
+suid 10,0
 )
 )
-uid 252,0
+uid 296,0
 )
 *16 (LogPort
 port (LogicalPort
@@ -102,11 +98,11 @@ decl (Decl
 n "i"
 t "std_logic_vector"
 b "(31 DOWNTO 0)"
-o 6
-suid 8,0
+o 7
+suid 11,0
 )
 )
-uid 254,0
+uid 298,0
 )
 ]
 )
@@ -162,19 +158,19 @@ uid 71,0
 litem &14
 pos 0
 dimension 20
-uid 251,0
+uid 295,0
 )
 *23 (MRCItem
 litem &15
 pos 1
 dimension 20
-uid 253,0
+uid 297,0
 )
 *24 (MRCItem
 litem &16
 pos 2
 dimension 20
-uid 255,0
+uid 299,0
 )
 ]
 )
@@ -445,7 +441,7 @@ value "T:\\Reconfiguracion_Dinamica\\src\\design\\tb_icap\\hds\\tester_generico"
 )
 (vvPair
 variable "date"
-value "15/09/2016"
+value "22/09/2016"
 )
 (vvPair
 variable "day"
@@ -457,7 +453,7 @@ value "jueves"
 )
 (vvPair
 variable "dd"
-value "15"
+value "22"
 )
 (vvPair
 variable "entity_name"
@@ -485,7 +481,7 @@ value "Juan Lanchares"
 )
 (vvPair
 variable "graphical_source_date"
-value "15/09/2016"
+value "22/09/2016"
 )
 (vvPair
 variable "graphical_source_group"
@@ -497,7 +493,7 @@ value "LANCHARES"
 )
 (vvPair
 variable "graphical_source_time"
-value "08:03:27"
+value "17:19:24"
 )
 (vvPair
 variable "group"
@@ -613,7 +609,7 @@ value "interface"
 )
 (vvPair
 variable "time"
-value "08:03:27"
+value "17:19:24"
 )
 (vvPair
 variable "unit"
@@ -648,10 +644,10 @@ optionalChildren [
 uid 8,0
 optionalChildren [
 *58 (CptPort
-uid 235,0
+uid 279,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 236,0
+uid 280,0
 ro 180
 va (VaSet
 vasetType 1
@@ -660,11 +656,11 @@ fg "0,65535,0"
 xt "21625,5250,22375,6000"
 )
 tg (CPTG
-uid 237,0
+uid 281,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 238,0
+uid 282,0
 ro 270
 va (VaSet
 )
@@ -676,7 +672,7 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 239,0
+uid 283,0
 va (VaSet
 font "Courier New,8,0"
 )
@@ -689,16 +685,16 @@ lang 2
 decl (Decl
 n "capacita"
 t "std_logic"
-o 7
-suid 6,0
+o 6
+suid 9,0
 )
 )
 )
 *59 (CptPort
-uid 240,0
+uid 284,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 241,0
+uid 285,0
 ro 180
 va (VaSet
 vasetType 1
@@ -707,11 +703,11 @@ fg "0,65535,0"
 xt "17625,5250,18375,6000"
 )
 tg (CPTG
-uid 242,0
+uid 286,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 243,0
+uid 287,0
 ro 270
 va (VaSet
 )
@@ -723,7 +719,7 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 244,0
+uid 288,0
 va (VaSet
 font "Courier New,8,0"
 )
@@ -736,15 +732,15 @@ decl (Decl
 n "CLK"
 t "std_logic"
 o 3
-suid 7,0
+suid 10,0
 )
 )
 )
 *60 (CptPort
-uid 245,0
+uid 289,0
 ps "OnEdgeStrategy"
 shape (Triangle
-uid 246,0
+uid 290,0
 ro 90
 va (VaSet
 vasetType 1
@@ -753,11 +749,11 @@ fg "0,65535,0"
 xt "24000,9625,24750,10375"
 )
 tg (CPTG
-uid 247,0
+uid 291,0
 ps "CptPortTextPlaceStrategy"
 stg "RightVerticalLayoutStrategy"
 f (Text
-uid 248,0
+uid 292,0
 va (VaSet
 )
 xt "22400,9500,23000,10500"
@@ -768,7 +764,7 @@ tm "CptPortNameMgr"
 )
 )
 dt (MLText
-uid 249,0
+uid 293,0
 va (VaSet
 font "Courier New,8,0"
 )
@@ -783,8 +779,8 @@ decl (Decl
 n "i"
 t "std_logic_vector"
 b "(31 DOWNTO 0)"
-o 6
-suid 8,0
+o 7
+suid 11,0
 )
 )
 )
@@ -1206,10 +1202,9 @@ blo "0,800"
 uid 50,0
 va (VaSet
 )
-xt "0,1000,12000,7000"
+xt "0,1000,12000,6000"
 st "LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE ieee.std_logic_arith.all;
 USE ieee.numeric_std.ALL;
 LIBRARY UNISIM;
 USE UNISIM.vcomponents.ALL;"
@@ -1488,6 +1483,6 @@ xt "42000,0,42000,0"
 tm "SyDeclarativeTextMgr"
 )
 )
-lastUid 255,0
+lastUid 299,0
 activeModelName "Symbol:CDM"
 )

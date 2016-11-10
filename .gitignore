@@ -51,8 +51,7 @@ script_borrado
 
 
 
-# track all .vhd files under ip library
-!/src/ip/hdl/*.vhd
+
 
 # -------------------------------------------------------------------
 # HDL designer user prefs

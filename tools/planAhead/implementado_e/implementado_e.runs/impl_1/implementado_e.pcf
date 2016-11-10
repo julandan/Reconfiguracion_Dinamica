@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Oct 27 17:51:40 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "activa_led_w" LOCATE = SITE "AD21" LEVEL 1;
+COMP "clk" LOCATE = SITE "U23" LEVEL 1;
+COMP "reset_dinamico" LOCATE = SITE "H17" LEVEL 1;
+COMP "activa_dinamico" LOCATE = SITE "A19" LEVEL 1;
+COMP "activa_led_e" LOCATE = SITE "AE21" LEVEL 1;
+COMP "rst" LOCATE = SITE "G26" LEVEL 1;
+TIMEGRP clk = BEL "U_1/contador_0" BEL "U_1/contador_1" BEL
+        "U_1/clk_100mz_aux" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 5 ns HIGH 50%;
+SCHEMATIC END;
+

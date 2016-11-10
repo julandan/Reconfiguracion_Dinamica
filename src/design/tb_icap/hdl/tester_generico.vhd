@@ -40,7 +40,7 @@ USE STD.textio.all;
 
 ENTITY tester_generico IS
    GENERIC( 
-      fichero_estimulos : string := "T:\Reconfiguracion_Dinamica\sim\config_1.rbt"
+      fichero_estimulos : string := "T:\Reconfiguracion_Dinamica\sim\simula.rbt"
          );
    PORT( 
       clk           : IN     std_logic;
@@ -66,7 +66,8 @@ BEGIN
     if capacita = '0' then
       I  <=X"ffffffff"; 
     elsif rising_edge(clk) then
-      if not endfile(stimulus) then
+
+      if (not endfile(stimulus)) and (capacita ='1')then
         readline(stimulus,l);
         read(l,s,read_ok);
         assert read_ok

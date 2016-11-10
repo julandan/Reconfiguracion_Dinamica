@@ -1,0 +1,1 @@
+ -do "add log -r *" -L tb_dinamico_e -L FSM_dinamico_e -l transcript.txt -i -t ns -multisource_delay latest +typdelays -coverage tb_dinamico_e.tb_FSM_dinamico_e(struct)

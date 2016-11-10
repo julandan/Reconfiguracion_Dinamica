@@ -1,0 +1,81 @@
+# //  Questa Sim-64
+# //  Version 10.1d win64 Nov  1 2012
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L tb_dinamico_e -L FSM_dinamico_e -coverage -do {add log -r *} -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/MentorGraphics/HDS_2015.1b/resources/downstream/modelsim/ModelSim_64Bit.dll} -pli {"C:/MentorGraphics/HDS_2015.1b/resources/downstream/modelsim/ModelSim_64Bit.dll"} tb_dinamico_e.tb_FSM_dinamico_e(struct) 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
+# 
+# ** Warning: (vopt-3) System call GetVolumeInformation failed.
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "FSM_dinamico_e(fsm)".
+# 
+# Loading C:/MentorGraphics/HDS_2015.1b/resources/downstream/modelsim/ModelSim_64Bit.dll
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.tb_fsm_dinamico_e(struct)#1
+# Loading fsm_dinamico_e.fsm_dinamico_e(fsm)#1
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# 
+# add log -r * 
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fsm_dinamico_e/i_FSM_dinamico_e
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fsm_dinamico_e/i_FSM_dinamico_e
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fsm_dinamico_e/i_FSM_dinamico_e
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /tb_fsm_dinamico_e/i_FSM_dinamico_e
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /tb_fsm_dinamico_e/i_FSM_dinamico_e
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /tb_fsm_dinamico_e/i_FSM_dinamico_e
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 2  Instance: /tb_fsm_dinamico_e/i_FSM_dinamico_e
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 2  Instance: /tb_fsm_dinamico_e/i_FSM_dinamico_e
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 2  Instance: /tb_fsm_dinamico_e/i_FSM_dinamico_e
+add wave -position insertpoint  \
+sim:/tb_fsm_dinamico_e/i_FSM_dinamico_e/current_state
+run
+# 0
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/tb_fsm_dinamico_e/i_FSM_dinamico_e/clk
+run
+# 0
+# 

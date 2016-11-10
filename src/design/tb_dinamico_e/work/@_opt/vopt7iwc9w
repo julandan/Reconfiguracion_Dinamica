@@ -1,0 +1,50 @@
+m255
+K3
+13
+cModel Technology
+Z0 dT:\Reconfiguracion_Dinamica\src\design\tb_dinamico_e\work
+T_opt
+Vz;HSlSgcSC[j2L7n0R2;:2
+04 24 6 work tb_fsm_dinamico_drc_fast struct 1
+=1-d4bed96626ca-57f3a861-23d-479c
+o-quiet +acc -auto_acc_if_foreign -work tb_dinamico_e -L tb_dinamico_e -L FSM_dinamico_e
+Z1 n@_opt
+Z2 OL;O;10.1d;51
+Etb_fsm_dinamico_drc_fast
+Z3 w1475589729
+Z4 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 dT:\Reconfiguracion_Dinamica\src\design\tb_dinamico_e\work
+Z8 8T:/Reconfiguracion_Dinamica/src/design/tb_dinamico_drc_fast/hdl/tb_fsm_dinamico_drc_fast_struct.vhd
+Z9 FT:/Reconfiguracion_Dinamica/src/design/tb_dinamico_drc_fast/hdl/tb_fsm_dinamico_drc_fast_struct.vhd
+l0
+L13
+V55K@I[3=^je1C0ZeMTObK1
+Z10 OL;C;10.1d;51
+31
+Z11 !s108 1475586129.641000
+Z12 !s90 -work|tb_dinamico_e|-nologo|-93|-f|C:/cygwin64/tmp/Files0|
+Z13 !s107 T:/Reconfiguracion_Dinamica/src/design/tb_dinamico_drc_fast/hdl/tb_fsm_dinamico_drc_fast_struct.vhd|
+Z14 o-work tb_dinamico_e -nologo -93
+Z15 tExplicit 1
+!s100 c^M<DQgdZQW^oc@Uh]4bS3
+!i10b 1
+Astruct
+DEx14 fsm_dinamico_e 14 fsm_dinamico_e 0 22 Q:H7M7e<a=o]a>Z4ZNB<F2
+DEx4 work 24 tb_fsm_dinamico_drc_fast 0 22 55K@I[3=^je1C0ZeMTObK1
+R4
+R5
+R6
+l65
+L37
+VQX2LihVKbS[_2DoRczCzC1
+R10
+31
+R11
+R12
+R13
+R14
+R15
+!s100 Q@zL_3U8alBd]OMb9E2=F0
+!i10b 1

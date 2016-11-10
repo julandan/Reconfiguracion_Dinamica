@@ -1,0 +1,43 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Oct 24 19:30:25 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "activa_led_w" LOCATE = SITE "AD21" LEVEL 1;
+COMP "clk" LOCATE = SITE "U23" LEVEL 1;
+COMP "reset_dinamico" LOCATE = SITE "H17" LEVEL 1;
+COMP "activa_dinamico" LOCATE = SITE "A19" LEVEL 1;
+COMP "activa_led_e" LOCATE = SITE "AE21" LEVEL 1;
+COMP "rst" LOCATE = SITE "G26" LEVEL 1;
+TIMEGRP clk = BEL "U_0/i_FSM_dinamico_w/csm_timer_0" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_1" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_2" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_3" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_4" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_5" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_6" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_7" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_8" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_9" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_10" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_11" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_12" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_13" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_14" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_15" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_16" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_17" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_18" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_19" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_20" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_21" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_22" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_23" BEL
+        "U_0/i_FSM_dinamico_w/csm_timer_24" BEL
+        "U_0/i_FSM_dinamico_w/current_state_FSM_FFd2" BEL
+        "U_0/i_FSM_dinamico_w/current_state_FSM_FFd1" BEL
+        "U_0/i_reg_rst_din/q_aux" BEL "U_0/i_reg_activa_led_w/q_aux" BEL
+        "U_0/i_reg_act_din/q_aux" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 5 ns HIGH 50%;
+SCHEMATIC END;
+

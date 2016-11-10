@@ -1,0 +1,531 @@
+m255
+K3
+13
+cModel Technology
+Z0 dT:\Reconfiguracion_Dinamica\work\compilation\todo
+T_opt
+VE2D7>JHU48]bE3;aS]K3e3
+04 4 6 work todo struct 1
+=1-d4bed96626ca-57b4233e-23e-17f0
+o-quiet +acc -auto_acc_if_foreign -work todo -L todo -L estatico -L dinamico_drc_fast -L dinamico_iz_slow
+Z1 n@_opt
+Z2 OL;O;10.1d;51
+Z3 dT:\Reconfiguracion_Dinamica\work\compilation\todo
+T_opt1
+V7BToIoo8nkY[>=c>Qg?Q[2
+04 12 6 work control_icap struct 1
+=1-d4bed96626ca-5801318f-130-a6c
+o-quiet +acc -auto_acc_if_foreign -work todo -L xilinxcorelib -L todo -L rom_e -L rom_w -L unisim
+Z4 n@_opt1
+R2
+R3
+T_opt2
+V@Pa5V:f_YGRLh@0G8jZCO2
+04 18 3 work divisor_frecuencia rtl 1
+=1-d4bed96626ca-58060643-120-3284
+o-quiet +acc -auto_acc_if_foreign -work todo -L todo
+Z5 n@_opt2
+R2
+R3
+Eblack_box
+Z6 w1475587968
+Z7 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z8 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z9 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R3
+Z10 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/black_box_struct.vhd
+Z11 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/black_box_struct.vhd
+l0
+L13
+V5k1<h8FNAYJdTdDZoZPWd3
+Z12 OL;C;10.1d;51
+31
+Z13 !s108 1476120132.683000
+Z14 !s90 -work|todo|-nologo|-93|-f|C:/cygwin64/tmp/Files0|
+Z15 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/black_box_struct.vhd|
+Z16 o-work todo -nologo -93
+Z17 tExplicit 1
+!s100 R=<QOKDl<OSXJnFUhT=V_2
+!i10b 1
+Astruct
+DEx4 work 9 black_box 0 22 5k1<h8FNAYJdTdDZoZPWd3
+R7
+R8
+R9
+l49
+L41
+VggSLj:<DAm`Ka9gia:YST3
+R12
+31
+R13
+R14
+R15
+R16
+R17
+!s100 lCFoLkfkRCihfcCecI:083
+!i10b 1
+Eclk_dv_to_se
+Z18 w1476263632
+Z19 DPx6 unisim 11 vcomponents 0 22 ^SgSiH]fe0j`VL_8Rhmkj2
+Z20 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R7
+Z21 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R8
+R9
+R3
+Z22 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/CLK_DV_TO_SE.vhd
+Z23 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/CLK_DV_TO_SE.vhd
+l0
+L67
+V[`Dil@FE;TzWAJYBA607g3
+R12
+33
+Z24 !s108 1476447127.415000
+Z25 !s90 -work|todo|-nologo|-2008|-f|C:/cygwin64/tmp/Files0|
+Z26 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/CLK_DV_TO_SE.vhd|
+Z27 o-work todo -nologo -2008
+R17
+!s100 ZS];ZRn2PIFgTLZ1hhFzZ3
+!i10b 1
+Axilinx
+R19
+R20
+R7
+R21
+R8
+R9
+DEx4 work 12 clk_dv_to_se 0 22 [`Dil@FE;TzWAJYBA607g3
+l109
+L81
+VSMiKUoJSO1:Kzml<ZLVQA0
+R12
+33
+R24
+R25
+R26
+R27
+R17
+!s100 mKhYcOJEMeV=BC?2AEUI[2
+!i10b 1
+Econtrol
+Z28 w1476806294
+R20
+R8
+R9
+R3
+Z29 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_fsm.vhd
+Z30 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_fsm.vhd
+l0
+L13
+VAQR`21mF5PbA;^6Y`kRZ?0
+R12
+31
+Z31 !s108 1476802695.539000
+R14
+Z32 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_icap_struct.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_fsm.vhd|
+R16
+R17
+!s100 X8aDm_fFR7WX<e_]1M1H;1
+!i10b 1
+Afsm
+DEx4 work 7 control 0 22 AQR`21mF5PbA;^6Y`kRZ?0
+R20
+R8
+R9
+l71
+L46
+V8FS;aAc9_VF3Y85zO0B[A1
+R12
+31
+R31
+R14
+R32
+R16
+R17
+!s100 23<6UI^bD_JP449?5V0Pm2
+!i10b 1
+Econtrol_icap
+R28
+R19
+R20
+R8
+R9
+R3
+Z33 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_icap_struct.vhd
+Z34 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_icap_struct.vhd
+l0
+L17
+Ve_Ebo7^99kJT:RU:j7H293
+R12
+31
+R31
+R14
+R32
+R16
+R17
+!s100 1L>Z>`5G;2zL6GmmkkAHm1
+!i10b 1
+Astruct
+DEx5 rom_w 5 rom_w 0 22 Ed0_fD_4f_ia^SC`G]@Va0
+DEx5 rom_e 5 rom_e 0 22 b0d5NoghO41J=:HLeQeRe1
+DEx4 todo 11 registro_en 0 22 X<gPRH`U15:QhSH]I2U=?0
+DEx4 todo 11 registro_32 0 22 IQnPmT0=5S3BJooghgTRz3
+DEx4 todo 8 registro 0 22 O6Pna2D0JoDSmn>WGWeDh0
+DEx4 todo 3 mux 0 22 <78TTzI?Q>3gLaX1B2?4?2
+DEx4 todo 9 inversion 0 22 =m0<iWBAhiaO7<hJ8;n^K1
+DEx4 todo 14 generador_addr 0 22 Bm2^7E]g91ii<e??33aYd0
+DEx4 todo 13 discriminador 0 22 8eW?cGO[]PEc_4YP5S8MC3
+DEx4 todo 7 control 0 22 AQR`21mF5PbA;^6Y`kRZ?0
+DEx4 work 12 control_icap 0 22 e_Ebo7^99kJT:RU:j7H293
+R19
+R20
+R8
+R9
+l187
+L55
+V7K>1H[N^S[ig5F>Ah:R[F1
+!s100 9[En6M=hmnM7:WWbIXBQi1
+R12
+31
+R31
+R14
+R32
+R16
+R17
+!i10b 1
+Ediscriminador
+Z35 w1476128140
+R20
+R8
+R9
+R3
+Z36 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/discriminador.vhd
+Z37 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/discriminador.vhd
+l0
+L15
+V8eW?cGO[]PEc_4YP5S8MC3
+R12
+33
+Z38 !s108 1476371657.497000
+Z39 !s90 -work|todo|-nologo|-2008|-f|C:/cygwin64/tmp/Files1|
+Z40 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/discriminador.vhd|
+R27
+R17
+!s100 l5i=TfMNlhX6^LSFXP;]=3
+!i10b 1
+Abehavior
+R20
+R8
+R9
+DEx4 work 13 discriminador 0 22 8eW?cGO[]PEc_4YP5S8MC3
+l26
+L24
+Vili8fKR]>_?Yik0z@SBU02
+R12
+33
+R38
+R39
+R40
+R27
+R17
+!s100 ^FlP=j6i1NL`3BmJ=YFNO2
+!i10b 1
+Edivisor_frecuencia
+Z41 w1476793397
+R20
+R8
+R9
+R3
+Z42 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/divisor_frecuencia_rtl.vhd
+Z43 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/divisor_frecuencia_rtl.vhd
+l0
+L15
+V_b70OVjnU<HdLfzhij3lj0
+R12
+33
+Z44 !s108 1476789815.379000
+R25
+Z45 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/divisor_frecuencia_rtl.vhd|
+R27
+R17
+!s100 4A7cS=5mzYa[b:eVBm[Tj0
+!i10b 1
+Artl
+R20
+R8
+R9
+DEx4 work 18 divisor_frecuencia 0 22 _b70OVjnU<HdLfzhij3lj0
+l26
+L23
+VoLZnC`XDT@7Mn<gMi[]5:0
+R12
+33
+R44
+R25
+R45
+R27
+R17
+!s100 =1DW7aY:9:jF>fO^5Yd<m1
+!i10b 1
+Egenerador_addr
+Z46 w1475087930
+R20
+R8
+R9
+R3
+Z47 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/generador_addr.vhd
+Z48 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/generador_addr.vhd
+l0
+L15
+VBm2^7E]g91ii<e??33aYd0
+R12
+33
+Z49 !s108 1475495788.703000
+R39
+Z50 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/mux.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/inversion.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/generador_addr.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/discriminador.vhd|
+R27
+R17
+!s100 i<3@6>BC75n^a8G@Gd9:?3
+!i10b 1
+Acomportamiento
+R20
+R8
+R9
+DEx4 work 14 generador_addr 0 22 Bm2^7E]g91ii<e??33aYd0
+l27
+L25
+V<;d5WUm1WM;@Rclg15dF;2
+R12
+33
+R49
+R39
+R50
+R27
+R17
+!s100 VZk]_E75;O<MMAF8kM2Iz2
+!i10b 1
+Einversion
+Z51 w1475498847
+R20
+R8
+R9
+R3
+Z52 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/inversion.vhd
+Z53 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/inversion.vhd
+l0
+L14
+V=m0<iWBAhiaO7<hJ8;n^K1
+R12
+33
+R49
+R39
+R50
+R27
+R17
+!s100 OOke9:I5kob:J8>]3EWJg0
+!i10b 1
+Abehavior
+R20
+R8
+R9
+DEx4 work 9 inversion 0 22 =m0<iWBAhiaO7<hJ8;n^K1
+l36
+L21
+V<bL8aOj]zVg2>Vk0O^cYR0
+R12
+33
+R49
+R39
+R50
+R27
+R17
+!s100 QNPjR3aH^JzLdhjdb6Dg>2
+!i10b 1
+Emux
+Z54 w1475598003
+R20
+R8
+R9
+R3
+Z55 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/mux.vhd
+Z56 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/mux.vhd
+l0
+L6
+V<78TTzI?Q>3gLaX1B2?4?2
+R12
+33
+Z57 !s108 1475767834.600000
+R25
+Z58 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/mux.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/discriminador.vhd|
+R27
+R17
+!s100 1fXzOg5^Z`>O2gLo8EM?72
+!i10b 1
+Abehavior
+R20
+R8
+R9
+DEx4 work 3 mux 0 22 <78TTzI?Q>3gLaX1B2?4?2
+l17
+L16
+VfaVaY<8zJ[hh43blPdWBI1
+R12
+33
+R57
+R25
+R58
+R27
+R17
+!s100 S<RngjWJ3BWB1JSakckB02
+!i10b 1
+Eregistro
+Z59 w1475584048
+R20
+R8
+R9
+R3
+Z60 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro.vhd
+Z61 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro.vhd
+l0
+L22
+VO6Pna2D0JoDSmn>WGWeDh0
+R12
+33
+Z62 !s108 1475767835.192000
+Z63 !s90 -work|todo|-nologo|-2008|-f|C:/cygwin64/tmp/Files3|
+Z64 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro.vhd|
+R27
+R17
+!s100 M<?3aC65B4@I>N:fNbgii2
+!i10b 1
+Artl
+R20
+R8
+R9
+DEx4 work 8 registro 0 22 O6Pna2D0JoDSmn>WGWeDh0
+l32
+L30
+V4hdmhB?Z;<<f;e94D8?V;0
+R12
+33
+R62
+R63
+R64
+R27
+R17
+!s100 efAJVA:7>]54InkMV5Qll3
+!i10b 1
+Eregistro_32
+Z65 w1476114902
+R20
+R8
+R9
+R3
+Z66 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro_32_rtl.vhd
+Z67 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro_32_rtl.vhd
+l0
+L22
+VIQnPmT0=5S3BJooghgTRz3
+R12
+33
+Z68 !s108 1476120132.839000
+R39
+Z69 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro_32_rtl.vhd|
+R27
+R17
+!s100 2mN=aG]ibiFS]BzjV;jCa2
+!i10b 1
+Artl
+R20
+R8
+R9
+DEx4 work 11 registro_32 0 22 IQnPmT0=5S3BJooghgTRz3
+l32
+L30
+VT7BN^WI0N>CMLLB0h]C??3
+R12
+33
+R68
+R39
+R69
+R27
+R17
+!s100 EdPhl3IC3hRXg7W4HZV<I1
+!i10b 1
+Eregistro_en
+Z70 w1475583725
+R20
+R8
+R9
+R3
+Z71 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro_en.vhd
+Z72 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro_en.vhd
+l0
+L22
+VX<gPRH`U15:QhSH]I2U=?0
+R12
+31
+Z73 !s108 1475591106.399000
+R14
+Z74 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_icap_struct.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/registro_en.vhd|T:/Reconfiguracion_Dinamica/src/design/todo/hdl/control_fsm.vhd|
+R16
+R17
+!s100 T0DbVZeHcRdgBbcUHkD[L0
+!i10b 1
+Artl
+R20
+R8
+R9
+DEx4 work 11 registro_en 0 22 X<gPRH`U15:QhSH]I2U=?0
+l33
+L31
+V;6Ka:m>9Ne=QN@EiUF_c^1
+R12
+31
+R73
+R14
+R74
+R16
+R17
+!s100 b`<b0@01ZD;5WeTSh`@zI2
+!i10b 1
+Etodo
+Z75 w1473090199
+R7
+R8
+R9
+Z76 dT:\Reconfiguracion_Dinamica\src\design\todo\work
+Z77 8T:/Reconfiguracion_Dinamica/src/design/todo/hdl/todo_struct.vhd
+Z78 FT:/Reconfiguracion_Dinamica/src/design/todo/hdl/todo_struct.vhd
+l0
+L13
+Va5B7h>3GERcm1T_V17^Sk1
+R12
+31
+Z79 !s108 1473415027.418000
+Z80 !s90 -work|todo|-nologo|-93|-f|C:/cygwin64/tmp/Files3|
+Z81 !s107 T:/Reconfiguracion_Dinamica/src/design/todo/hdl/todo_struct.vhd|
+R16
+R17
+!s100 bdRn8L_UFR3_JLDKUjH@53
+!i10b 1
+Astruct
+DEx8 estatico 12 fsm_estatico 0 22 md9YU54^G_I@iVl>Q:cz31
+DEx16 dinamico_iz_slow 20 fsm_dinamico_iz_slow 0 22 11Ri7846P1d>97f;W1W:13
+DEx17 dinamico_drc_fast 21 fsm_dinamico_drc_fast 0 22 ^=0nzOhVd;cQTn8FWJdJU0
+DEx4 work 4 todo 0 22 a5B7h>3GERcm1T_V17^Sk1
+R7
+R8
+R9
+l87
+L44
+VR3UP]ESK<kgZQfHOiYlZL3
+R12
+31
+R79
+R80
+R81
+R16
+R17
+!s100 <Ck<kW8M;Sj3RKM8K`1KO3
+!i10b 1

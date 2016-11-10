@@ -1,0 +1,96 @@
+m255
+K3
+13
+cModel Technology
+Z0 dT:\Reconfiguracion_Dinamica\src\design\tb_dinamico_e\work
+T_opt
+Vz;HSlSgcSC[j2L7n0R2;:2
+04 24 6 work tb_fsm_dinamico_drc_fast struct 1
+=1-d4bed96626ca-57f3a861-23d-479c
+Z1 o-quiet +acc -auto_acc_if_foreign -work tb_dinamico_e -L tb_dinamico_e -L FSM_dinamico_e
+Z2 n@_opt
+Z3 OL;O;10.1d;51
+Z4 dT:\Reconfiguracion_Dinamica\src\design\tb_dinamico_e\work
+T_opt1
+V4I`PKOJ?oHQVa[=1AVU[B2
+04 17 6 work tb_fsm_dinamico_e struct 1
+=1-d4bed96626ca-57ffa793-84-286c
+R1
+Z5 n@_opt1
+R3
+Etb_fsm_dinamico_drc_fast
+Z6 w1475589729
+Z7 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z8 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z9 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R4
+Z10 8T:/Reconfiguracion_Dinamica/src/design/tb_dinamico_drc_fast/hdl/tb_fsm_dinamico_drc_fast_struct.vhd
+Z11 FT:/Reconfiguracion_Dinamica/src/design/tb_dinamico_drc_fast/hdl/tb_fsm_dinamico_drc_fast_struct.vhd
+l0
+L13
+V55K@I[3=^je1C0ZeMTObK1
+Z12 OL;C;10.1d;51
+31
+Z13 !s108 1475586129.641000
+Z14 !s90 -work|tb_dinamico_e|-nologo|-93|-f|C:/cygwin64/tmp/Files0|
+Z15 !s107 T:/Reconfiguracion_Dinamica/src/design/tb_dinamico_drc_fast/hdl/tb_fsm_dinamico_drc_fast_struct.vhd|
+Z16 o-work tb_dinamico_e -nologo -93
+Z17 tExplicit 1
+!s100 c^M<DQgdZQW^oc@Uh]4bS3
+!i10b 1
+Astruct
+Z18 DEx14 fsm_dinamico_e 14 fsm_dinamico_e 0 22 Q:H7M7e<a=o]a>Z4ZNB<F2
+DEx4 work 24 tb_fsm_dinamico_drc_fast 0 22 55K@I[3=^je1C0ZeMTObK1
+R7
+R8
+R9
+l65
+L37
+VQX2LihVKbS[_2DoRczCzC1
+R12
+31
+R13
+R14
+R15
+R16
+R17
+!s100 Q@zL_3U8alBd]OMb9E2=F0
+!i10b 1
+Etb_fsm_dinamico_e
+Z19 w1476375942
+R7
+R8
+R9
+R4
+Z20 8T:/Reconfiguracion_Dinamica/src/design/tb_dinamico_drc_fast/hdl/tb_fsm_dinamico_e_struct.vhd
+Z21 FT:/Reconfiguracion_Dinamica/src/design/tb_dinamico_drc_fast/hdl/tb_fsm_dinamico_e_struct.vhd
+l0
+L13
+V>gF5T66=R`LeKF0?l@7X^2
+R12
+31
+Z22 !s108 1476372342.963000
+R14
+Z23 !s107 T:/Reconfiguracion_Dinamica/src/design/tb_dinamico_drc_fast/hdl/tb_fsm_dinamico_e_struct.vhd|
+R16
+R17
+!s100 Pi:7:Xi[Yc3_Td05QHE;c2
+!i10b 1
+Astruct
+R18
+DEx4 work 17 tb_fsm_dinamico_e 0 22 >gF5T66=R`LeKF0?l@7X^2
+R7
+R8
+R9
+l65
+L37
+VF]B=TQY^@lSMJaUbjW]0[1
+R12
+31
+R22
+R14
+R23
+R16
+R17
+!s100 ;KU2L>B<DH@24R8mXPVgf2
+!i10b 1

@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<Project Name="config_2" FileVersion="1.2" ProjectVersion="2.0">
-	<Partition Name="/top" State="import" ImportLocation="../../top_dinamico.promote/Xconfig_1" Preserve="routing">
-		<Partition Name="/top/i_black_box" State="implement" ImportLocation="NONE" Reconfigurable="true" ReconfigModuleName="dinamico_lento">
-		</Partition>
-	</Partition>
-</Project>
-
